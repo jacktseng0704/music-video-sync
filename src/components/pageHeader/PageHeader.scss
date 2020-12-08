@@ -1,0 +1,19 @@
+.PageHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 300px;
+
+  .title {
+    font-size: 3rem;
+    color: rgb(48, 48, 48);
+  }
+  .paragraph {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(111, 110, 110);
+    margin-top: 20px;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AppHeader.scss';
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBar from '../searchBar/SearchBar';
 
 function AppHeader() {
   return (
