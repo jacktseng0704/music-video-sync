@@ -1,0 +1,13 @@
+.AppHeader {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  box-shadow: 5px 5px 15px 5px #6f6e6e;
+  justify-content: space-between;
+
+  .header-title {
+    color: gray;
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
+}
