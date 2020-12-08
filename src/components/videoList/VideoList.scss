@@ -1,9 +1,13 @@
+.VideoList-title {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .VideoList {
   margin-top: 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-
-  .title {
-    font-size: 1.5rem;
-  }
+  padding: 10px;
 }

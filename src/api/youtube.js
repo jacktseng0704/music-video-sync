@@ -4,7 +4,7 @@ import axios from 'axios';
 //   baseURL:'https://www.googleapis.com/youtube/v3',
 // })
 
-export const loadYTVideos = (query) => {
+export const fetchYTVideos = (query) => {
   console.log('Loading YT Videos');
 
   const YT_SEARCH_URL = `https://www.googleapis.com/youtube/v3/search`;

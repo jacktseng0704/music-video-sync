@@ -1,0 +1,1702 @@
+[
+  {
+    "kind": "youtube#searchResult",
+    "etag": "S4y6GUDNMBaEXZ8r71K4cjvYGWo",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "PMivT7MJ41M"
+    },
+    "snippet": {
+      "publishedAt": "2017-03-02T02:00:11Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - That’s What I Like (Official Video)",
+      "description": "The official audio of Bruno Mars' \"That's What I Like\" from the album '24K Magic'. Directed by Bruno Mars and Jonathan Lia Download/Stream '24K Magic': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/PMivT7MJ41M/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/PMivT7MJ41M/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/PMivT7MJ41M/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2017-03-02T02:00:11Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "j1GCcMK310BXfVjmBjKl7yO3t1s",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "LjhCEhWiKXk"
+    },
+    "snippet": {
+      "publishedAt": "2010-09-08T21:29:01Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Just The Way You Are [Official Video]",
+      "description": "The official music video for \"Just The Way You Are\" by Bruno Mars from the 'Doo-Wops & Hooligans' album - Available now! Download/Stream 'Doo-Wops and ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/LjhCEhWiKXk/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/LjhCEhWiKXk/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/LjhCEhWiKXk/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2010-09-08T21:29:01Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "Fb8Wk4j3DXNophWzTqPE6ep4swg",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "fLexgOxsZu0"
+    },
+    "snippet": {
+      "publishedAt": "2011-04-15T22:08:07Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - The Lazy Song (Official Video)",
+      "description": "The official video of Bruno Mars' \"The Lazy Song\" from the album 'Doo-Wops and Hooligans''. Directed by Bruno Mars and Cameron Duddy Choreographed ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/fLexgOxsZu0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/fLexgOxsZu0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/fLexgOxsZu0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2011-04-15T22:08:07Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "jv8w5fRn1zD5s5OO6NtiQ5662XU",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "v-KTb0kViIo"
+    },
+    "snippet": {
+      "publishedAt": "2020-12-05T07:37:07Z",
+      "channelId": "UCq8sNODw9D-5qN6o8ougOXA",
+      "title": "Rihanna, Ed Sheeran, Katy Perry, Maroon 5, Bruno mars, Charlie Puth 💗 Music ☂️ Pop Hits 2020 🆗",
+      "description": "Video Rihanna, Ed Sheeran, Katy Perry, Maroon 5, Bruno mars, Charlie Puth Music ☂️ Pop Hits 2020 . The compilation of the latest and greatest songs will ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/v-KTb0kViIo/default_live.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/v-KTb0kViIo/mqdefault_live.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/v-KTb0kViIo/hqdefault_live.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Music Collection 2020",
+      "liveBroadcastContent": "live",
+      "publishTime": "2020-12-05T07:37:07Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "Dq5qPWW69uzbEbUW4gzKwGFcTDE",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "UqyT8IEBkvY"
+    },
+    "snippet": {
+      "publishedAt": "2016-10-07T03:31:50Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - 24K Magic (Official Video)",
+      "description": "The official video of Bruno Mars' \"24K Magic\" from the album '24K Magic'. Download/Stream '24K Magic': https://Atlantic.lnk.to/24K_MagicID See Bruno Mars on ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/UqyT8IEBkvY/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/UqyT8IEBkvY/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/UqyT8IEBkvY/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-10-07T03:31:50Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "P2el4lO9X-AZaw5KNpMDaLBGhuE",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "Y9MUx_MNXxE"
+    },
+    "snippet": {
+      "publishedAt": "2020-12-05T06:46:25Z",
+      "channelId": "UCD741Gk4lh8M0Agf5FUpJfg",
+      "title": "Maroon 5, Rihanna, Katy Perry, Bruno mars, Ed Sheeran, Charlie Puth, Ariana Grande Pop Hits 2021",
+      "description": "Maroon 5, Rihanna, Katy Perry, Bruno mars, Ed Sheeran, Charlie Puth, Ariana Grande Pop Hits 2021 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Y9MUx_MNXxE/default_live.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Y9MUx_MNXxE/mqdefault_live.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Y9MUx_MNXxE/hqdefault_live.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "DMnet Music",
+      "liveBroadcastContent": "live",
+      "publishTime": "2020-12-05T06:46:25Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "a56pao_5KWENG_TB0jx86j6uMPY",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "OPf0YbXqDm0"
+    },
+    "snippet": {
+      "publishedAt": "2014-11-19T14:00:18Z",
+      "channelId": "UCmfFGTSsfJVu6CGvL8r75qg",
+      "title": "Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars",
+      "description": "Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars Follow on Spotify: http://ron.sn/stream/spotify Listen on Apple Music: http://ron.sn/stream/applemusic ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/OPf0YbXqDm0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/OPf0YbXqDm0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "MarkRonsonVEVO",
+      "liveBroadcastContent": "none",
+      "publishTime": "2014-11-19T14:00:18Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "uNWG0oDLW1pkzqZL2O7-mosRXvI",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "CdiQQqFPphI"
+    },
+    "snippet": {
+      "publishedAt": "2018-11-10T12:09:28Z",
+      "channelId": "UCenNZEfzXZ8TslSraMGVk9w",
+      "title": "Bruno mars Greatest Hits - The Best Of Bruno mars Playlist 2018",
+      "description": "Bruno mars Greatest Hits - The Best Of Bruno mars Playlist 2018 Bruno mars Greatest Hits - The Best Of Bruno mars Playlist 2018 Bruno mars Greatest Hits ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/CdiQQqFPphI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/CdiQQqFPphI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/CdiQQqFPphI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Music Studio",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-11-10T12:09:28Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "5Q0zd9Rx5K3zz3FCoXzQgz08NUE",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "iafri6g5wA4"
+    },
+    "snippet": {
+      "publishedAt": "2016-10-08T11:00:02Z",
+      "channelId": "UCQ8jTcfNOaBUwRSTQUybEug",
+      "title": "Bruno Mars - The Lazy Song (Official Video)",
+      "description": "HAPPY BIRTHDAY BRUNO MARS! Zum Geburtstag von Bruno Mars bringen wir euch heute seine größten Hits zurück auf eure Bildschirme! Den Anfang ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/iafri6g5wA4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/iafri6g5wA4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/iafri6g5wA4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Angesagt!",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-10-08T11:00:02Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "D_dZtAQxNnpS58HED4-LJ3jbeMw",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "ekzHIouo8Q4"
+    },
+    "snippet": {
+      "publishedAt": "2013-02-05T20:01:34Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - When I Was Your Man (Official Video)",
+      "description": "The official video of Bruno Mars' \"When I Was Your Man\" from the album 'Unorthodox Jukebox'. Directed by Cameron Duddy & Bruno Mars Download/Stream ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/ekzHIouo8Q4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/ekzHIouo8Q4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/ekzHIouo8Q4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2013-02-05T20:01:34Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "wnWTgxhWH57jOKPukk9jfzrrjy4",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "d6UWIwgRMN0"
+    },
+    "snippet": {
+      "publishedAt": "2016-10-10T01:13:59Z",
+      "channelId": "UCLvhr40dgoBcV4XBlOhauNw",
+      "title": "브루노 마스 (Bruno Mars) - 24K Magic 가사 번역 뮤직비디오",
+      "description": "브루노 마스 (Bruno Mars) - 24K Magic 가사 번역 뮤직비디오 *음원듣기* 멜론: http://me2.do/5vd3CHoV 지니: http://genie.co.kr/8VAO11 네이버: ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/d6UWIwgRMN0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/d6UWIwgRMN0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/d6UWIwgRMN0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "워너뮤직코리아 (Warner Music Korea)",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-10-10T01:13:59Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "xZH5T9tSAVM7JhBSrkrEFL2zKrQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "SR6iYWJxHqs"
+    },
+    "snippet": {
+      "publishedAt": "2010-11-22T16:55:48Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Grenade [Official Video]",
+      "description": "The official music video for \"Grenade\" by Bruno Mars from the 'Doo-Wops and Hooligans' album - Available now! Download/Stream 'Doo-Wops and Hooligans': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/SR6iYWJxHqs/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/SR6iYWJxHqs/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/SR6iYWJxHqs/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2010-11-22T16:55:48Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "E8N94O7VrZ92Eya7uBd5wXsmgew",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "TRpNuGc8R0o"
+    },
+    "snippet": {
+      "publishedAt": "2019-02-19T13:56:32Z",
+      "channelId": "UC3j5feP2jGj5m21uDT3OEjg",
+      "title": "Charly García acusó a Bruno Mars de plagio1",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/TRpNuGc8R0o/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/TRpNuGc8R0o/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/TRpNuGc8R0o/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Primiciasya",
+      "liveBroadcastContent": "none",
+      "publishTime": "2019-02-19T13:56:32Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "ao2U6UfZ8FKunbEeoFKUtjBwJMQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "LsoLEjrDogU"
+    },
+    "snippet": {
+      "publishedAt": "2018-01-04T04:49:43Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Finesse (Remix) (feat. Cardi B] [Official Video]",
+      "description": "The official music video for Bruno Mars' \"Finesse (Remix)\" featuring Cardi B - Available Now: https://Atlantic.lnk.to/FinesseRemixID Directed by Bruno Mars ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/LsoLEjrDogU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/LsoLEjrDogU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/LsoLEjrDogU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-01-04T04:49:43Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "j2bCPDkJN7o5Oj_OivpDm92m_P0",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "-FyjEnoIgTM"
+    },
+    "snippet": {
+      "publishedAt": "2017-08-14T01:24:48Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Versace on the Floor (Official Video)",
+      "description": "The official music video for Bruno Mars' \"Versace on the Floor\" from the '24K Magic' album - Available Now! Download/Stream '24k Magic': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/-FyjEnoIgTM/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/-FyjEnoIgTM/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/-FyjEnoIgTM/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2017-08-14T01:24:48Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "tuY-FTQdIuHk4Z5IbaZycXS1UdQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "nPvuNsRccVw"
+    },
+    "snippet": {
+      "publishedAt": "2013-06-14T14:10:13Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Treasure (Official Video)",
+      "description": "The official video of Bruno Mars' \"Treasure\" from the album 'Unorthodox Jukebox'. Download/Stream 'Unorthodox Jukebox': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/nPvuNsRccVw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/nPvuNsRccVw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/nPvuNsRccVw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2013-06-14T14:10:13Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "lnzJhr-AcYAfuSDNDCk6GIpimVk",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "W-w3WfgpcGg"
+    },
+    "snippet": {
+      "publishedAt": "2011-11-10T22:06:13Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - It Will Rain (Official Video)",
+      "description": "The official music video for Bruno Mars' \"Locked Out Of Heaven\" from the 'Unorthodox Jukebox' album - Available Now! Directed by Cameron Duddy & Bruno ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/W-w3WfgpcGg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/W-w3WfgpcGg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/W-w3WfgpcGg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2011-11-10T22:06:13Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "LTh939h1rvmrHNDlZalv6JN0RQQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "e-fA-gBCkj0"
+    },
+    "snippet": {
+      "publishedAt": "2012-10-15T19:03:03Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Locked Out Of Heaven (Official Video)",
+      "description": "The official music video for Bruno Mars' \"Locked Out Of Heaven\" from the 'Unorthodox Jukebox' album - Available Now! Download/Stream 'Unorthodox ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/e-fA-gBCkj0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/e-fA-gBCkj0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/e-fA-gBCkj0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2012-10-15T19:03:03Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "NfklXkEGYw79ZVbiDNuMPRf8QGQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "8aRor905cCw"
+    },
+    "snippet": {
+      "publishedAt": "2010-05-06T16:49:48Z",
+      "channelId": "UClVrJwcIy7saPcGc1nct80A",
+      "title": "Travie McCoy: Billionaire ft. Bruno Mars [OFFICIAL VIDEO]",
+      "description": "Travie McCoy's music video for 'Billionaire' featuring Bruno Mars from his album, Lazarus - available now on DCD2 Records / Fueled By Ramen. Download it at ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/8aRor905cCw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/8aRor905cCw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/8aRor905cCw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Fueled By Ramen",
+      "liveBroadcastContent": "none",
+      "publishTime": "2010-05-06T16:49:48Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "fDcUj2k3vNKxBjeUM2jhvSricgo",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "fXw0jcYbqdo"
+    },
+    "snippet": {
+      "publishedAt": "2020-10-02T17:37:37Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Talking To The Moon [Official Lyric Video]",
+      "description": "Celebrating the 10th Anniversary of Doo-Wops & Hooligans! Stream/Download 'Doo-Wops & Hooligans': https://brunomars.lnk.to/DooWopsAndHooligansID ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/fXw0jcYbqdo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/fXw0jcYbqdo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/fXw0jcYbqdo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-10-02T17:37:37Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "Rde5oQgR0vcD6sFj0TRlCpQiO_s",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "3y-O-4IL-PU"
+    },
+    "snippet": {
+      "publishedAt": "2019-03-01T14:57:46Z",
+      "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
+      "title": "Cardi B &amp; Bruno Mars - Please Me (Official Video)",
+      "description": "Cardi B & Bruno Mars - Please Me (Official Video) Stream/Download: https://cardib.lnk.to/PleaseMeID Directed by Bruno Mars and Florent Dechard ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/3y-O-4IL-PU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/3y-O-4IL-PU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/3y-O-4IL-PU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Cardi B",
+      "liveBroadcastContent": "none",
+      "publishTime": "2019-03-01T14:57:46Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "GmOnaUCRnDjw9RwJ2cGCBcUOkiE",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "ttlTus58MNA"
+    },
+    "snippet": {
+      "publishedAt": "2016-11-27T15:07:08Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - 24K Magic (from the 2016 American Music Awards) [Live]",
+      "description": "The live performance of Bruno Mars' \"24K Magic\" from the album '24K Magic' at the 2016 American Music Awards. Download/Stream '24K Magic': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/ttlTus58MNA/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/ttlTus58MNA/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/ttlTus58MNA/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-11-27T15:07:08Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "T5O3Iq9JklPsz41plTszDqjXBuI",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "AFxCO_DyzYM"
+    },
+    "snippet": {
+      "publishedAt": "2016-12-14T06:32:59Z",
+      "channelId": "UCJ0uqCI0Vqr2Rrt1HseGirg",
+      "title": "Bruno Mars Carpool Karaoke",
+      "description": "James Corden and Bruno Mars drive through Los Angeles singing his hits, including tracks from the new album \"24K Magic,\" and chat about everything from ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/AFxCO_DyzYM/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/AFxCO_DyzYM/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/AFxCO_DyzYM/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "The Late Late Show with James Corden",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-12-14T06:32:59Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "krz5KIp6ftbL-drCKBD9eAO8wUo",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "AHDtXqjgEj4"
+    },
+    "snippet": {
+      "publishedAt": "2013-10-16T19:39:10Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Gorilla (Official Video)",
+      "description": "The official video of Bruno Mars' \"Gorilla\" from the album 'Unorthodox Jukebox'. Directed By: Bruno Mars & Cameron Duddy Download/Stream 'Unorthodox ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/AHDtXqjgEj4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/AHDtXqjgEj4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/AHDtXqjgEj4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2013-10-16T19:39:10Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "T0hps9DHzxLF90o5E0xrwCGWVEs",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "8WgP_NzXdd8"
+    },
+    "snippet": {
+      "publishedAt": "2019-02-05T14:59:41Z",
+      "channelId": "UCvR2R7j218tzejtTsb_X6Rw",
+      "title": "When I Was Your Man - Bruno Mars (Lyrics)",
+      "description": "Learn how to sing in only 30 days with these easy, fun video lessons! https://www.30daysinger.com/a/8328/BFzaEvmu -- \"When I Was Your Man - Bruno Mars ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/8WgP_NzXdd8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/8WgP_NzXdd8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/8WgP_NzXdd8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "DopeLyrics",
+      "liveBroadcastContent": "none",
+      "publishTime": "2019-02-05T14:59:41Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "p-KKNWI6xuGDw_knl7r3f5g0UlY",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "Wd1Iz6j4WC0"
+    },
+    "snippet": {
+      "publishedAt": "2017-05-22T03:51:37Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Versace on the Floor (Billboard Music Awards 2017) [Live]",
+      "description": "The live performance of Bruno Mars' \"Versace on the Floor\" at the 2017 Billboard Music Awards. Download/Stream '24k Magic': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Wd1Iz6j4WC0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Wd1Iz6j4WC0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Wd1Iz6j4WC0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2017-05-22T03:51:37Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "_xcgWRRn1Hq-_q5gk0k42NiefQU",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "Msl2fl3h59I"
+    },
+    "snippet": {
+      "publishedAt": "2020-04-10T17:30:02Z",
+      "channelId": "UCvR2R7j218tzejtTsb_X6Rw",
+      "title": "Count On Me - Bruno Mars (Lyrics) 🎵",
+      "description": "Bruno Mars - Count On Me (Lyrics) \"Count On Me\" from the album 'Doo-Wops and Hooligans''. Pick up the '24K Magic' World Tour Collection in Bruno's ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Msl2fl3h59I/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Msl2fl3h59I/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Msl2fl3h59I/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "DopeLyrics",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-04-10T17:30:02Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "7gdRpRaMx1wAK2K2hbDcJNvp2h4",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "L4In9WkDHLo"
+    },
+    "snippet": {
+      "publishedAt": "2020-05-23T17:32:26Z",
+      "channelId": "UCvR2R7j218tzejtTsb_X6Rw",
+      "title": "Marry You - Bruno Mars (Lyrics) 🎵",
+      "description": "Bruno Mars - Marry You (Lyrics) Bruno Mars - Marry You Download/Stream 'Doo-Wops and Hooligans': https://atlantic.lnk.to/DooWopsAndHooligansID ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/L4In9WkDHLo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/L4In9WkDHLo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/L4In9WkDHLo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "DopeLyrics",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-05-23T17:32:26Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "Smiptpd7R7_sFHZLz9tVNqTfVJM",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "dElRVQFqj-k"
+    },
+    "snippet": {
+      "publishedAt": "2020-10-02T17:37:45Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Marry You [Official Lyric Video]",
+      "description": "Celebrating the 10th Anniversary of Doo-Wops & Hooligans! Stream/Download 'Doo-Wops & Hooligans': https://brunomars.lnk.to/DooWopsAndHooligansID ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/dElRVQFqj-k/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/dElRVQFqj-k/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/dElRVQFqj-k/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-10-02T17:37:45Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "XYz1dePKpKGxB7a3MRXB8S0rGUQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "8PTDv_szmL0"
+    },
+    "snippet": {
+      "publishedAt": "2010-03-09T20:33:08Z",
+      "channelId": "UCe4LM_eKc9ywRmVuBm5pjQg",
+      "title": "B.o.B - Nothin&#39; On You (feat. Bruno Mars) [Official Video]",
+      "description": "The official video of \"Nothin' On You (feat. Bruno Mars)\" by B.o.B from the album 'B.o.B Presents: The Adventures of Bobby Ray'. Listen to B.o.B on Spotify here: ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/8PTDv_szmL0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/8PTDv_szmL0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/8PTDv_szmL0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Atlantic Records",
+      "liveBroadcastContent": "none",
+      "publishTime": "2010-03-09T20:33:08Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "BFYqOgAnj39hUTNu5-gfNSbskHQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "SDPITj1wlkg"
+    },
+    "snippet": {
+      "publishedAt": "2016-02-11T20:27:17Z",
+      "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+      "title": "Beyoncé &amp; Bruno Mars Crash the Pepsi Super Bowl 50 Halftime Show | NFL",
+      "description": "Beyoncé and Bruno Mars join Coldplay and have a dance-off during the Super Bowl 50 Halftime Show. Subscribe to the NFL YouTube channel to see ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/SDPITj1wlkg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/SDPITj1wlkg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/SDPITj1wlkg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "NFL",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-02-11T20:27:17Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "pb4Y7KsSdBzDyRzE7MWU53p9jHc",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "cSMB63GMfWM"
+    },
+    "snippet": {
+      "publishedAt": "2016-12-06T09:00:35Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - 24K Magic (from the Victoria’s Secret 2016 Fashion Show) [Live]",
+      "description": "The live performance of Bruno Mars' \"24K Magic\" from the album '24K Magic' at the Victoria's Secret 2016 Fashion Show. Download/Stream '24K Magic': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/cSMB63GMfWM/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/cSMB63GMfWM/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/cSMB63GMfWM/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-12-06T09:00:35Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "-TAjiiC3YfRtDUDYjymQ1mBy8hk",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "5kEfq8jPsu4"
+    },
+    "snippet": {
+      "publishedAt": "2016-12-06T09:00:35Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Chunky (from the Victoria’s Secret 2016 Fashion Show) [Live]",
+      "description": "The live performance of Bruno Mars' \"Chunky\" from the album '24K Magic' at the Victoria's Secret 2016 Fashion Show. Download/Stream '24K Magic': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/5kEfq8jPsu4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/5kEfq8jPsu4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/5kEfq8jPsu4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-12-06T09:00:35Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "2z9yWUb3-Jm8ZbbeZ1SLbcXvibM",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "oCtYekG1qBc"
+    },
+    "snippet": {
+      "publishedAt": "2016-11-02T16:45:25Z",
+      "channelId": "UC-FQUIVQ-bZiefzBiQAa8Fw",
+      "title": "Bruno Mars covers Adele&#39;s All I Ask in the Live Lounge",
+      "description": "Bruno Mars covers Adele's All I Ask in the Live Lounge for BBC Radio 1 for Clara Amfo. In the UK? Check out Clara Amfo's Radio 1 show including more live ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/oCtYekG1qBc/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/oCtYekG1qBc/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/oCtYekG1qBc/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BBC Radio 1",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-11-02T16:45:25Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "7koZ0aVQDjC61oMyblNe8R1yhjU",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "6k8cpUkKK4c"
+    },
+    "snippet": {
+      "publishedAt": "2020-10-02T17:37:52Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Count on Me [Official Lyric Video]",
+      "description": "Celebrating the 10th Anniversary of Doo-Wops & Hooligans! Stream/Download 'Doo-Wops & Hooligans': https://brunomars.lnk.to/DooWopsAndHooligansID ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/6k8cpUkKK4c/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/6k8cpUkKK4c/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/6k8cpUkKK4c/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-10-02T17:37:52Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "jAaSG5-FGB6aj8-5Dc-eKfmmY7E",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "U68MJz9DrI4"
+    },
+    "snippet": {
+      "publishedAt": "2018-10-31T14:17:10Z",
+      "channelId": "UCSugZEYrWbzqIWGD195V-YA",
+      "title": "Gucci Mane, Bruno Mars, Kodak Black - Wake Up in The Sky [Official Music Video]",
+      "description": "The official music video for Gucci Mane, Bruno Mars, and Kodak Black's “Wake Up In The Sky” – available now! Stream/Download ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/U68MJz9DrI4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/U68MJz9DrI4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/U68MJz9DrI4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Gucci Mane",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-10-31T14:17:10Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "nNmKw5ug01Lij9c7qq8Gg_xvRgs",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "vV8p4fCOzhw"
+    },
+    "snippet": {
+      "publishedAt": "2014-02-05T11:05:23Z",
+      "channelId": "UCfvJgjjyisVPsHW-h7ktCVA",
+      "title": "Bruno Mars Superbowl Halftime Show Feb. 2, 2014",
+      "description": "DISCLAIMER: I do not own the rights to this video. I did not upload this video with the intent to make money. I only uploaded it so others could enjoy it. All rights ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/vV8p4fCOzhw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/vV8p4fCOzhw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/vV8p4fCOzhw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "John Ray Grepo",
+      "liveBroadcastContent": "none",
+      "publishTime": "2014-02-05T11:05:23Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "rZVZUw2gVgETQV7tnLqOvuNnyB0",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "ADiahetrNJw"
+    },
+    "snippet": {
+      "publishedAt": "2020-08-18T22:21:14Z",
+      "channelId": "UCxw-n5yh34R-t-Oh3H0rrXw",
+      "title": "The Untold Truth of Bruno Mars Going Silent in 2020",
+      "description": "Hi Babes! In today's video, we are discussing The Untold Truth of Why Bruno Mars Went Silent in 2020. Bruno Mars is one of the biggest selling artists of all time ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/ADiahetrNJw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/ADiahetrNJw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/ADiahetrNJw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BlackTeaBlog",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-08-18T22:21:14Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "VOJ7-BDZNnfox3rWYAg9e9cP6Hw",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "3JxHx202csI"
+    },
+    "snippet": {
+      "publishedAt": "2020-10-11T15:15:01Z",
+      "channelId": "UCyLCtx6M8lsqR_UYtaLGH_Q",
+      "title": "이 팝송 알지? 브루노 마스 노래 모음 가사 :U",
+      "description": "브루노 마스 노래 모음 1탄 입니다! 브루노 마스 팝송 모음 플레이리스트. 도도의 팝송 커뮤니티 - https://cafe.naver.com/dodosmusic - 광고는 자동 삽입되는것이며 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/3JxHx202csI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/3JxHx202csI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/3JxHx202csI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "뚀 dodomusic",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-10-11T15:15:01Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "4isCRB3mG2MG3LrnsBCOOrpp1xc",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "OZLUa8JUR18"
+    },
+    "snippet": {
+      "publishedAt": "2012-01-31T18:55:00Z",
+      "channelId": "UCEOhcOACopL42xyOBIv1ekg",
+      "title": "Lil Wayne - Mirror ft. Bruno Mars (Official Music Video)",
+      "description": "Music video by Lil Wayne performing Mirror. © 2012 Cash Money Records/Young Money Ent./Universal Rec. #VEVOCertified on May 11, 2012.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/OZLUa8JUR18/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/OZLUa8JUR18/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/OZLUa8JUR18/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "LilWayneVEVO",
+      "liveBroadcastContent": "none",
+      "publishTime": "2012-01-31T18:55:00Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "RG0zEz6mUA39GQTEBfZWOmCWddw",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "M10Y6jKaXfY"
+    },
+    "snippet": {
+      "publishedAt": "2019-09-07T19:00:00Z",
+      "channelId": "UCBJh1lBd44OGUd5JrHZQvCQ",
+      "title": "TOP 10 | BEST BRUNO MARS covers in The Voice",
+      "description": "We've made a list of 10 amazing BRUNO MARS performances in The Voice. What is your favorite song? Let us know in the comments below!   This video ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/M10Y6jKaXfY/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/M10Y6jKaXfY/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/M10Y6jKaXfY/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Best of The Voice",
+      "liveBroadcastContent": "none",
+      "publishTime": "2019-09-07T19:00:00Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "e0pxN6p_5FZ57a3H293pMeSNDlc",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "1iBm60uJXvs"
+    },
+    "snippet": {
+      "publishedAt": "2011-03-04T18:58:37Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Liquor Store Blues (feat. Damian Marley) [Official Video]",
+      "description": "The official video of Bruno Mars' \"Liquor Store Blues (feat. Damian Marley)\" from the album 'Doo-Wops and Hooligans'. Download/Stream 'Doo-Wops and ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/1iBm60uJXvs/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/1iBm60uJXvs/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/1iBm60uJXvs/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2011-03-04T18:58:37Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "4qXek04hVGiZ3NBFW7a8xuFY_M8",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "CyM5AjiZris"
+    },
+    "snippet": {
+      "publishedAt": "2012-11-06T16:46:46Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Young Girls [Official Audio]",
+      "description": "The official audio for Bruno Mars' \"Young Girls\" from the 'Unorthodox Jukebox' album - Available Now! Download/Stream 'Unorthodox Jukebox': ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/CyM5AjiZris/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/CyM5AjiZris/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/CyM5AjiZris/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2012-11-06T16:46:46Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "tlIoapPqZXxO362tTQR97a0n8G8",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "Wa5B22KAkEk"
+    },
+    "snippet": {
+      "publishedAt": "2011-11-28T21:29:02Z",
+      "channelId": "UCVp3nfGRxmMadNDuVbJSk8A",
+      "title": "Snoop Dogg &amp; Wiz Khalifa - Young, Wild and Free ft. Bruno Mars [Official Video]",
+      "description": "Watch the best videos on YouTube from Wiz Khalifa here: http://www.youtube.com/playlist?list=PLakoz4isJL_mdAOvmFD8ddUZFZc4Hqewo Wiz Khalifa's new ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Wa5B22KAkEk/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Wa5B22KAkEk/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Wa5B22KAkEk/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Wiz Khalifa",
+      "liveBroadcastContent": "none",
+      "publishTime": "2011-11-28T21:29:02Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "AZwwBT0vMPtlfjr4j6MutKpWk94",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "x94m407UJSI"
+    },
+    "snippet": {
+      "publishedAt": "2011-07-25T22:04:07Z",
+      "channelId": "UCEZ7IItXT9NPfz19-Awcskg",
+      "title": "Bruno Mars - Talking To The Moon (Lyrics) HD",
+      "description": "Lyrics: I know you're somewhere out there Somewhere far away I want you back I want you back My neighbors think I'm crazy But they don't understand You're ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/x94m407UJSI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/x94m407UJSI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/x94m407UJSI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Figure Out Who This Is",
+      "liveBroadcastContent": "none",
+      "publishTime": "2011-07-25T22:04:07Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "5Vvdp5WlGRK13JezmFEtIMi7kx4",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "hMjruqY3Hq8"
+    },
+    "snippet": {
+      "publishedAt": "2012-02-08T08:00:00Z",
+      "channelId": "UCEOhcOACopL42xyOBIv1ekg",
+      "title": "Lil Wayne - Mirror ft. Bruno Mars (Edited) (Official Music Video)",
+      "description": "Music video by Lil Wayne performing Mirror. (C) 2011 Cash Money Records Inc.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/hMjruqY3Hq8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/hMjruqY3Hq8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/hMjruqY3Hq8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "LilWayneVEVO",
+      "liveBroadcastContent": "none",
+      "publishTime": "2012-02-08T08:00:00Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "9_zcY1npGpiO-ZoH0NYuc_jayRQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "9RUH6ztCKPY"
+    },
+    "snippet": {
+      "publishedAt": "2020-02-08T01:15:01Z",
+      "channelId": "UCgkbksvWAJEhypP3JXggeIQ",
+      "title": "Lighters   Bad Meets Evil &amp; Bruno Mars Lyrics",
+      "description": "Great song by great music artists. Written By: Philip Lawrence, Ari Levine, Battle Royale & 3 more Mastered at: Bernie Grundman Mastering Mastered by: “Big ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/9RUH6ztCKPY/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/9RUH6ztCKPY/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/9RUH6ztCKPY/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "raptorboi9z",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-02-08T01:15:01Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "f9DeaXlG8A_jJG9WuJZ1-eMvVrM",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "6JTgkRN3uD4"
+    },
+    "snippet": {
+      "publishedAt": "2020-05-27T17:10:07Z",
+      "channelId": "UCvR2R7j218tzejtTsb_X6Rw",
+      "title": "Travie McCoy, Bruno Mars - Billionaire (Lyrics) 🎵",
+      "description": "Travie McCoy - Billionaire ft. Bruno Mars (Lyrics) Lyrics video for \"Billionaire\" by Travie McCoy, Bruno Mars Travie McCoy - Billionaire ft. Bruno Mars: ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/6JTgkRN3uD4/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/6JTgkRN3uD4/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/6JTgkRN3uD4/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "DopeLyrics",
+      "liveBroadcastContent": "none",
+      "publishTime": "2020-05-27T17:10:07Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "8Zpdip3fKpaUhSNrefVHGgnbVfs",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "lMl1UFfBp1U"
+    },
+    "snippet": {
+      "publishedAt": "2018-07-16T17:50:29Z",
+      "channelId": "UCsk9mHUQSI9oNwNRraLhN-g",
+      "title": "Bruno Mars - Nothin&#39; On You (Tradução)",
+      "description": "INSTAGRAM: https://www.instagram.com/renanrissardo • TWITTER: https://twitter.com/Renan_Rissardo.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/lMl1UFfBp1U/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/lMl1UFfBp1U/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/lMl1UFfBp1U/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Renan Rissardo",
+      "liveBroadcastContent": "none",
+      "publishTime": "2018-07-16T17:50:29Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "pdoAebWCxSQCS7deSdnf4AwH4_U",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "oacaq_1TkMU"
+    },
+    "snippet": {
+      "publishedAt": "2016-11-18T04:08:44Z",
+      "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
+      "title": "Bruno Mars - Chunky (Official Audio)",
+      "description": "The official audio of Bruno Mars' \"Chunky\" from the album '24K Magic'. Download/Stream '24K Magic': https://Atlantic.lnk.to/24K_MagicID See Bruno Mars on ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/oacaq_1TkMU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/oacaq_1TkMU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/oacaq_1TkMU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "Bruno Mars",
+      "liveBroadcastContent": "none",
+      "publishTime": "2016-11-18T04:08:44Z"
+    }
+  }
+]

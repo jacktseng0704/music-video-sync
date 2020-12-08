@@ -1,25 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './VideoList.scss';
-import { loadYTVideos } from '../../api/youtube';
+import VideoCard from '../videoCard/VideoCard';
 
-function VideoList() {
-  const [ytVideos, setYTVideos] = useState([]);
-
-  const searchYoutube = async (q) => {
-    const result = await loadYTVideos(q);
-    console.log(result);
-    setYTVideos(result.data.items);
-  };
-  console.log(ytVideos);
-
-  useEffect(() => {
-    searchYoutube('bruno mars');
-  }, []);
-
+function VideoList({ videoList }) {
+  console.log(videoList);
   return (
-    <main className='VideoList'>
-      <h3 className='title'>Video List</h3>
-    </main>
+    <>
+      <h3 className='VideoList-title'>Video List</h3>
+      <main className='VideoList'>
+        {!videoList
+          ? null
+          : videoList.map((video, index) => <VideoCard video={video} key={index} />)}
+      </main>
+    </>
   );
 }
 
