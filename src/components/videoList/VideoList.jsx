@@ -3,7 +3,7 @@ import './VideoList.scss';
 import VideoCard from '../videoCard/VideoCard';
 
 function VideoList({ videoList }) {
-  console.log('Video List: ', videoList);
+  // console.log('Video List: ', videoList);
 
   return (
     <>
