@@ -11,7 +11,6 @@ function SearchBar({ query, setQuery }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setQuery(value);
-    console.log(query);
     setValue('');
   };
 

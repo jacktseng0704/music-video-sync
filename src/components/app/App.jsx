@@ -8,11 +8,11 @@ import { fetchYTVideos } from '../../api/youtube';
 
 function App() {
   const [query, setQuery] = useState('bruno mars');
-  const [videoList, setVideoList] = useState([]);
+  const [videoList, setVideoList] = useState(null);
 
   const searchYoutube = async (q) => {
     const result = await fetchYTVideos(q);
-    console.log(result);
+    console.log('AJAX fetch result: ', result);
     setVideoList(result.data.items);
   };
 
