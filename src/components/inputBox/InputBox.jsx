@@ -22,7 +22,7 @@ function InputBox({ roomId }) {
     messageRef.add({
       content: inputMessage,
       timeSent: firebase.firestore.FieldValue.serverTimestamp(),
-      user: 'Jack',
+      user: 'Guest',
     });
   };
 
