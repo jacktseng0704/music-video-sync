@@ -1,11 +1,31 @@
 .ChatBox {
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
   border: 1px solid gray;
   border-radius: 5px;
   width: 700px;
+  width: 80%;
   height: 500px;
 
   h3 {
     text-align: center;
   }
+
+  .room-id {
+    text-align: center;
+    border: 1px solid;
+    background-color: ivory;
+    padding: 10px;
+  }
+
+  .messages {
+    flex: auto;
+  }
 }
+
+// @media (max-width: 800px) {
+//   .ChatBox {
+//     width: 90%;
+//   }
+// }

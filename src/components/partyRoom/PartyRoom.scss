@@ -1,9 +1,12 @@
 .PartyRoom {
+  margin: 0 auto;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h3 {
     padding: 20px;
+    text-align: center;
   }
 }

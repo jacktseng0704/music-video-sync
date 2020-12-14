@@ -1,0 +1,20 @@
+.InputBox {
+  display: flex;
+  border: 1px solid;
+  padding: 20px;
+
+  input {
+    border-radius: 5px;
+  }
+
+  .input-field {
+    flex: auto;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .submit-btn {
+    margin-left: 10px;
+    padding: 0 10px;
+  }
+}
