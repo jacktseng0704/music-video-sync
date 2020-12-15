@@ -1,32 +1,15 @@
 import React, { useState } from 'react';
 import './VideoList.scss';
 import VideoCard from '../videoCard/VideoCard';
+import ModalForm from '../modalForm/ModalForm';
 
 function VideoList({ videoList }) {
   const [showModal, setShowModal] = useState(false);
   // console.log('Video List: ', videoList);
 
-  const handleSubmit = () => {
-    setShowModal(false);
-  };
-
   return (
     <>
-      {showModal && (
-        <div className='Modal'>
-          <form className='modal-form' onSubmit={handleSubmit}>
-            <h2>Create a room</h2>
-            <input
-              className='modal-input'
-              type='input'
-              placeholder='Enter your name to create a room'
-              // onChange={handleChange}
-              // value={inputMessage}
-            />
-            <input className='modal-submit-btn' type='submit' />
-          </form>
-        </div>
-      )}
+      {showModal && <ModalForm setShowModal={setShowModal} />}
       <h3 className='VideoList-title'>Video List</h3>
       <main className='VideoList'>
         {videoList &&
