@@ -3,13 +3,14 @@ import { useHistory } from 'react-router-dom';
 import './VideoCard.scss';
 import firebase from '../../firebase';
 
-function VideoCard({ video }) {
+function VideoCard({ video, setShowModal }) {
   const history = useHistory();
   const db = firebase.firestore();
   const { snippet, id } = video;
 
   const handleClick = async (e) => {
-    await createRoom(e);
+    // await createRoom(e);
+    setShowModal(true);
     console.log('video', video);
   };
 
@@ -24,10 +25,12 @@ function VideoCard({ video }) {
   };
 
   return (
-    <div className='VideoCard' onClick={handleClick} id={id.videoId}>
-      <img src={snippet.thumbnails.medium.url} alt={snippet.description} />
-      <p>{snippet.title}</p>
-    </div>
+    <>
+      <div className='VideoCard' onClick={handleClick} id={id.videoId}>
+        <img src={snippet.thumbnails.medium.url} alt={snippet.description} />
+        <p>{snippet.title}</p>
+      </div>
+    </>
   );
 }
 
