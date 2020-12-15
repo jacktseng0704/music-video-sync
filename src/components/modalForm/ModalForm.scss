@@ -8,21 +8,6 @@
   background-color: rgba(72, 72, 72, 0.95);
   padding: 10px;
 
-  h2 {
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 70px;
-  }
-
-  input {
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-
   .modal-form {
     display: flex;
     flex-direction: column;
@@ -37,17 +22,41 @@
     right: 50%;
     transform: translate(50%, -50%);
     background-color: rgb(6, 5, 5);
-  }
 
-  .modal-input {
-    font-size: 1rem;
-    font-weight: normal;
-    border: 1px solid;
-  }
+    h2 {
+      font-size: 3rem;
+      color: white;
+      text-align: center;
+      margin-bottom: 70px;
+    }
 
-  .modal-submit-btn:hover {
-    cursor: pointer;
-    background-color: #aaa;
+    input,
+    button {
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: rgb(126, 126, 126);
+      cursor: pointer;
+    }
+
+    .modal-input {
+      font-size: 1rem;
+      font-weight: normal;
+      border: 1px solid;
+    }
+    .modal-submit-btn {
+      color: #111;
+    }
+
+    .modal-submit-btn:hover:enabled {
+      cursor: pointer;
+      background-color: #aaa;
+    }
   }
 }
 

@@ -19,13 +19,13 @@ function VideoPlayer({ videoURL, roomId }) {
   const monitorFirestore = async () => {
     await docRef.onSnapshot((doc) => {
       // console.log('playing', playing);
-      const playingStatus = doc.data().playing;
+      const playingStatus = doc?.data()?.playing;
       // console.log('playingStatus', playingStatus);
 
-      if (typeof videoRef.current.getInternalPlayer().pauseVideo !== 'function') {
+      if (typeof videoRef?.current?.getInternalPlayer()?.pauseVideo !== 'function') {
         return;
       }
-      videoRef.current.seekTo(doc.data().playingTime);
+      videoRef.current.seekTo(doc?.data()?.playingTime);
 
       if (playingStatus) {
         videoRef.current.getInternalPlayer().playVideo();
@@ -81,9 +81,6 @@ function VideoPlayer({ videoURL, roomId }) {
           onReady={() => {
             console.log('onReady callback');
             console.log('someone joined the room!');
-            docRef.update({
-              playing: false,
-            });
             console.log('\n');
           }}
           onStart={() => {

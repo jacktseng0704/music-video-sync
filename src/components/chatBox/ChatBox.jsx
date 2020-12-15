@@ -13,6 +13,9 @@ function ChatBox({ roomId }) {
 
   useEffect(() => {
     renderMessages();
+    return () => {
+      setMessages(null);
+    };
   }, []);
 
   const renderMessages = () => {

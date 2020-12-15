@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './PartyRoom.scss';
-import firebase from '../../firebase';
+import { db } from '../../firebase';
 import ChatBox from '../chatBox/ChatBox';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
 
@@ -9,7 +9,6 @@ function Room() {
   const [videoId, setVideoId] = useState('');
 
   const { roomId } = useParams();
-  const db = firebase.firestore();
   const ref = db.collection('partyroom').doc(roomId);
   let youtubeURL = 'https://www.youtube.com/watch?v=';
   let videoURL = `${youtubeURL}${videoId}`;
@@ -20,6 +19,9 @@ function Room() {
       // console.log(doc.data());
       setVideoId(doc.data().videoId);
     });
+    return () => {
+      setVideoId('');
+    };
   }, []);
 
   return (
