@@ -1,31 +1,18 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
 import './VideoCard.scss';
-import firebase from '../../firebase';
+import ModalForm from '../modalForm/ModalForm';
 
-function VideoCard({ video, setShowModal }) {
-  const history = useHistory();
-  const db = firebase.firestore();
+function VideoCard({ video }) {
+  const [showModal, setShowModal] = useState(false);
   const { snippet, id } = video;
 
-  const handleClick = async (e) => {
-    // await createRoom(e);
+  const handleClick = () => {
     setShowModal(true);
-    console.log('video', video);
-  };
-
-  const createRoom = async (e) => {
-    console.log('create room for video id: ', e.currentTarget.id);
-    const docRef = await db.collection('partyroom').add({
-      title: snippet.title,
-      videoId: e.currentTarget.id,
-    });
-    history.push(`/partyroom/${docRef.id}`);
-    console.log('Room id: ', docRef.id);
   };
 
   return (
     <>
+      {showModal && <ModalForm setShowModal={setShowModal} video={video} />}
       <div className='VideoCard' onClick={handleClick} id={id.videoId}>
         <img src={snippet.thumbnails.medium.url} alt={snippet.description} />
         <p>{snippet.title}</p>
