@@ -7,8 +7,14 @@ function AppHeader({ query, setQuery }) {
   const history = useHistory();
 
   const handleClick = () => {
+    let storage = localStorage.getItem('partyroom');
+    if (storage) {
+      let userId = JSON.parse(storage).userId;
+      history.push(`/user/${userId}`);
+    } else {
+      alert('Please enter your name to open a room');
+    }
     console.log('clicked!');
-    history.push(`/user`);
   };
 
   return (

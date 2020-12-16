@@ -4,22 +4,26 @@ import { nanoid } from 'nanoid';
 import { useHistory } from 'react-router-dom';
 import { db } from '../../firebase';
 import useOutsideClick from '../../util/modal';
+import OldUserForm from '../oldUserForm/OldUserForm';
 
 function ModalForm({ setShowModal, video }) {
   const ref = useRef();
   const inputRef = useRef();
   const [name, setName] = useState('');
   const [userId] = useState(nanoid(10));
+  const [roomId] = useState(nanoid(15));
+  const [button, setButton] = useState(1);
   const [localRepo, setLocalRepo] = useState(null);
   const history = useHistory();
 
   useEffect(() => {
-    inputRef.current.focus();
     const repository = localStorage.getItem('partyroom');
 
     if (repository) {
       setLocalRepo(JSON.parse(repository));
+      return;
     }
+    inputRef.current.focus();
   }, []);
   console.log('========localRepo', localRepo);
 
@@ -29,11 +33,16 @@ function ModalForm({ setShowModal, video }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const localStorageData = await createLocalStorage();
-    await createRoom(localStorageData);
+    const localStorageData = await checkLocalStorage();
+    if (button === 2) {
+      history.push(`/user/${localStorageData.userId}`);
+      console.log('use old room!');
+    } else {
+      console.log('new room created!');
+      await createRoom(localStorageData);
+    }
 
-    console.log('name:', name);
-    console.log('user id:', userId);
+    console.log('user id:', localStorageData.userId);
     console.log('video', video);
     console.log('\n');
     setName('');
@@ -43,27 +52,35 @@ function ModalForm({ setShowModal, video }) {
     setName(e.target.value);
   };
 
-  const createLocalStorage = () => {
-    let storage = { roomId: [] };
+  const checkLocalStorage = () => {
+    let storage = null;
 
-    storage['userName'] = name;
-    storage['userId'] = userId;
-    storage['roomId'].push(userId);
+    const readRepo = () => {
+      storage = localRepo;
+    };
+
+    const createRepo = () => {
+      // storage = { roomId: [] };
+      storage = {};
+
+      storage['userName'] = name;
+      storage['userId'] = userId;
+      // storage['roomId'].push(roomId);
+      window.localStorage.setItem('partyroom', JSON.stringify(storage));
+    };
+    localRepo ? readRepo() : createRepo();
 
     console.log('---->userId', storage['userId']);
-    console.log('---->roomId', storage['roomId']);
+    // console.log('---->roomId', storage['roomId']);
     console.log('---->userName', storage['userName']);
 
-    window.localStorage.setItem('partyroom', JSON.stringify(storage));
     return storage;
   };
 
-  const createRoom = async (localStorageData) => {
+  const createRoom = async ({ userId, userName }) => {
     const { snippet, id } = video;
     console.log('snippet', snippet);
     console.log('create room for video id: ', id.videoId);
-
-    console.log(localStorageData);
 
     // const docRef = await db.collection('partyroom').add({
     //   userName: name,
@@ -72,23 +89,26 @@ function ModalForm({ setShowModal, video }) {
     //   videoId: id.videoId,
     // });
 
-    // history.push(`/partyroom/${localStorageData.userId}`);
+    await db.collection('partyroom').doc(roomId).set({
+      userName,
+      userId,
+      title: snippet.title,
+      image: snippet.thumbnails.medium.url,
+      videoId: id.videoId,
+      roomId: roomId,
+    });
+
+    // history.push(`/partyroom/${localStorageData.roomId}`);
+    history.push(`/partyroom/${roomId}`);
     // console.log('Room id: ', docRef.id);
   };
 
   return (
     <div className='ModalForm'>
       <form className='modal-form' onSubmit={handleSubmit} ref={ref}>
-        {localRepo && (
-          <>
-            {' '}
-            <h2 className='paragraph'>Welcome {localRepo.userName}</h2>
-            <button>Create a new room</button>
-            <button>Use previous room</button>
-          </>
-        )}
-
-        {!localRepo && (
+        {localRepo ? (
+          <OldUserForm localRepo={localRepo} setButton={setButton} />
+        ) : (
           <>
             <h2>Create a room</h2>
 

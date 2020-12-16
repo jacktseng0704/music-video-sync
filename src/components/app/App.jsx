@@ -7,6 +7,7 @@ import AppHeader from '../appHeader/AppHeader';
 import PageHeader from '../pageHeader/PageHeader';
 import VideoList from '../videoList/VideoList';
 import PartyRoom from '../partyRoom/PartyRoom';
+import UserRoom from '../userRoom/UserRoom';
 // import { fetchYTVideos } from '../../api/youtube';
 import mockdata from '../../api/mockdata.json';
 import { Route } from 'react-router-dom';
@@ -41,6 +42,9 @@ function App() {
 
       <Route path='/partyroom/:roomId'>
         <PartyRoom />
+      </Route>
+      <Route path='/user/:userId'>
+        <UserRoom />
       </Route>
     </div>
   );

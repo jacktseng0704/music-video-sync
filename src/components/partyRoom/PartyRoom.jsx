@@ -19,9 +19,6 @@ function Room() {
       // console.log(doc.data());
       setVideoId(doc.data().videoId);
     });
-    return () => {
-      setVideoId('');
-    };
   }, []);
 
   return (
