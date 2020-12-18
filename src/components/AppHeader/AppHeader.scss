@@ -1,10 +1,11 @@
 .AppHeader {
   display: flex;
+  background-color: white;
   align-items: center;
   min-height: 70px;
   padding: 20px;
   margin-bottom: 30px;
-  box-shadow: 5px 5px 15px 5px #6f6e6e;
+  box-shadow: 5px 5px 20px 2px #6f6e6e;
   justify-content: space-between;
 
   .link {
@@ -22,6 +23,7 @@
 
   .user-room {
     cursor: pointer;
+    transition: color 0.3s;
 
     &:hover {
       color: red;

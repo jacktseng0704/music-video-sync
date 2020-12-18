@@ -68,7 +68,7 @@ function Room() {
   return (
     <>
       <main className='PartyRoom'>
-        <h3>Party room id: {roomId}</h3>
+        {/* <h3>Party room id: {roomId}</h3> */}
         {videoId && <VideoPlayer videoURL={videoURL} roomId={roomId} />}
         <div className='active-users'>
           <h3 className='title'>Users in the room</h3>

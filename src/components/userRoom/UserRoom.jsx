@@ -26,8 +26,8 @@ function UserRoom() {
   return (
     <>
       <div className='UserRoom'>
-        <h2>User id : {userId}</h2>
-        <h2>Your room</h2>
+        {/* <h2>User id : {userId}</h2> */}
+        <h2>Your rooms</h2>
         <div className='room-card'>
           {userRoom && userRoom.map((room, i) => <UserRoomCard key={i} room={room} />)}
         </div>

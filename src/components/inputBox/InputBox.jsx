@@ -11,12 +11,12 @@ function InputBox({ roomId }) {
   const messageRef = db.collection('partyroom').doc(roomId).collection('messages');
 
   const handleChange = (e) => {
-    setInputMessage(e.target.value);
+    setInputMessage(e.target.value.trim());
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    postMsgToFirebase();
+    if (inputMessage.trim()) postMsgToFirebase();
     setInputMessage('');
   };
 
@@ -37,7 +37,7 @@ function InputBox({ roomId }) {
         onChange={handleChange}
         value={inputMessage}
       />
-      <input className='submit-btn' type='submit' />
+      <input className='submit-btn' type='submit' disabled={!inputMessage} />
     </form>
   );
 }

@@ -30,7 +30,7 @@ function ChatBox({ roomId }) {
   return (
     <div className='ChatBox'>
       <h3>Chat box</h3>
-      <p className='room-id'>roomId: {roomId}</p>
+      {/* <p className='room-id'>roomId: {roomId}</p> */}
       <div className='messages'>
         {messages &&
           messages.map((message, index) => <ChatMessage message={message} key={index} />)}

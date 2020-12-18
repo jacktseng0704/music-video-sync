@@ -1,18 +1,25 @@
 .UserRoom {
-  border: 1px solid;
+  // border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   border-radius: 4px;
   text-align: center;
   min-height: 100vh;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 80px auto 20px;
   padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
 
   h2 {
-    margin-bottom: 40px;
+    text-align: center;
+    padding: 40px;
   }
 
   .room-card {
     display: flex;
+    margin-top: 40px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
