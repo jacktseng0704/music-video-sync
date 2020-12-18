@@ -14,3 +14,15 @@ firebase.initializeApp(firebaseConfig);
 
 export default firebase;
 export const db = firebase.firestore();
+export const roomRef = db.collection('partyroom');
+
+// export const getActiveRoom = () => {
+//   const roomRef = db.collection('partyroom');
+
+//   roomRef.where("activeUser", "!=", []).onSnapshot((querySnapshot) => {
+//     const data = querySnapshot.docs.map((doc) => doc.data());
+//     console.log('Current data: ', data);
+//   });
+
+//   console.log('=========> get active room');
+// }

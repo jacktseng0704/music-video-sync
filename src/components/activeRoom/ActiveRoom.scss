@@ -1,0 +1,81 @@
+.ActiveRoom {
+  position: relative;
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+  height: 350px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .active-rooms {
+    display: flex;
+    justify-content: center;
+
+    .room {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid;
+      border-radius: 5px;
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+
+      .user-number {
+        margin-top: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.GuestForm {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+  min-width: 100vw;
+  .cover {
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 1;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    right: 25%;
+    z-index: 2;
+    margin: 0 auto;
+
+    .input-field {
+      margin: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+// @media (max-width: 800px) {
+//   .GuestForm {
+//     .form {
+//       border: 10px solid white;
+//       width: 100%;
+//     }
+//   }
+// }
