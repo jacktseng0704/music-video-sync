@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './ActiveRoom.scss';
 import { useHistory } from 'react-router-dom';
 import { nanoid } from 'nanoid';
-import firebase, { roomRef } from '../../firebase';
+// import firebase, { roomRef } from '../../firebase';
 
 function ActiveRoom({ room }) {
   const history = useHistory();

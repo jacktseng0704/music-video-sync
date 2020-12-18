@@ -1,6 +1,6 @@
 .ActiveRoom {
   position: relative;
-  border: 1px solid;
+  border-bottom: 1px solid;
   padding: 20px;
   text-align: center;
   height: 350px;
@@ -56,10 +56,11 @@
     padding: 20px;
     background-color: white;
     position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    right: 25%;
+    width: 40%;
+    height: 70%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
     z-index: 2;
     margin: 0 auto;
 
@@ -71,11 +72,34 @@
   }
 }
 
-// @media (max-width: 800px) {
-//   .GuestForm {
-//     .form {
-//       border: 10px solid white;
-//       width: 100%;
-//     }
-//   }
-// }
+@media (max-width: 1000px) {
+  .GuestForm {
+    .form {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .GuestForm {
+    .form {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .GuestForm {
+    .form {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .GuestForm {
+    .form {
+      width: 90%;
+    }
+  }
+}
