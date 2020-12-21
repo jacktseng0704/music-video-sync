@@ -4,9 +4,9 @@ import './ChatMessage.scss';
 function ChatMessage({ message }) {
   return (
     <div className='ChatMessage'>
-      <span>{message.user}:</span>
+      <span>{message.user}: </span>
       <p>{message.content}</p>
-      <span>
+      <span className='message-time'>
         {message.timeSent &&
           new Date(message.timeSent?.seconds * 1000).toLocaleTimeString('zh-Hans-TW')}
       </span>

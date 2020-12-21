@@ -1,5 +1,13 @@
 .search-bar {
+  position: relative;
   margin-right: 10px;
+
+  .search-icon {
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    top: calc(50% - 1em);
+  }
 
   input {
     padding: 10px;

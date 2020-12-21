@@ -1,6 +1,6 @@
 .ActiveRoom {
-  position: relative;
-  border-bottom: 1px solid;
+  // position: relative;
+  // border-bottom: 1px solid;
   padding: 20px;
   text-align: center;
   height: 350px;
@@ -11,19 +11,25 @@
 
   .active-rooms {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 
     .room {
       display: flex;
       flex-direction: column;
-      border: 1px solid;
+      align-items: center;
       border-radius: 5px;
-      width: 200px;
-      height: 200px;
+      width: 100%;
       cursor: pointer;
+      transition: transform 0.5s;
 
-      img {
-        width: 100%;
+      &:hover {
+        transform: translateY(-10%);
+      }
+
+      .room-img {
+        img {
+          width: 100%;
+        }
       }
 
       .user-number {

@@ -1,8 +1,26 @@
-.page-content {
+.main-section {
   display: flex;
-  flex-direction: column;
-  background-color: white;
-  max-width: 1100px;
-  margin: 0 auto;
-  border-radius: 10px;
+
+  .ActiveRooms {
+    border-right: 1px solid rgb(242, 242, 242);
+    box-shadow: rgba(40, 35, 45, 0.2) 0px 0px 4px 0px;
+
+    // background: gray;
+    min-width: 240px;
+
+    .title {
+      padding: 20px;
+      // border: 1px solid;
+      font-weight: bolder;
+    }
+  }
+
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    // background-color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    // border-radius: 10px;
+  }
 }

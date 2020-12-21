@@ -5,9 +5,11 @@ import firebase, { db } from '../../firebase';
 import { getUserData } from '../../util/localStorage';
 import ChatBox from '../chatBox/ChatBox';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
+import { HiShare } from 'react-icons/hi';
 
 function Room() {
   const [videoId, setVideoId] = useState('');
+  const [showNotification, setShowNotification] = useState(false);
   const [activeUser, setActiveUser] = useState();
   const { userId, userName } = getUserData();
 
@@ -65,9 +67,32 @@ function Room() {
   };
   console.log('active users:', activeUser);
 
+  const copyURL = () => {
+    const URL = window.location.href;
+    textToClipboard(URL);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 3000);
+  };
+
+  const textToClipboard = (text) => {
+    let dummy = document.createElement('textarea');
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+  };
+
   return (
     <>
       <main className='PartyRoom'>
+        <div className='share-link'>
+          <p>Click the icon to invite your friends</p>
+          <HiShare className='share-icon' size={20} onClick={copyURL} />
+          {showNotification && <div className='notification'>Copied link!</div>}
+        </div>
         {/* <h3>Party room id: {roomId}</h3> */}
         {videoId && <VideoPlayer videoURL={videoURL} roomId={roomId} />}
         <div className='active-users'>

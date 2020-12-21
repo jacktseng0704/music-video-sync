@@ -4,8 +4,10 @@
   align-items: center;
   min-height: 70px;
   padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 5px 5px 20px 2px #6f6e6e;
+  // margin-bottom: 10px;
+  // box-shadow: 5px 5px 20px 2px #6f6e6e;
+  border-bottom: 1px solid rgb(242, 242, 242);
+  box-shadow: rgba(40, 35, 45, 0.1) 0px 1px 8px 0px;
   justify-content: space-between;
 
   .link {

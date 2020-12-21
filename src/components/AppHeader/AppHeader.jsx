@@ -2,6 +2,7 @@ import React from 'react';
 import './AppHeader.scss';
 import SearchBar from '../searchBar/SearchBar';
 import { Link, Route, useHistory } from 'react-router-dom';
+import { RiFolderMusicFill } from 'react-icons/ri';
 
 function AppHeader({ query, setQuery }) {
   const history = useHistory();
@@ -26,7 +27,8 @@ function AppHeader({ query, setQuery }) {
         <SearchBar query={query} setQuery={setQuery} className='search-bar' />
       </Route>
       <div className='user-room' onClick={handleClick}>
-        User's room
+        {/* User's room */}
+        <RiFolderMusicFill size={30} />
       </div>
     </header>
   );

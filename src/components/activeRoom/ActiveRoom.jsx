@@ -53,12 +53,13 @@ function ActiveRoom({ room }) {
   return (
     <>
       <div className='ActiveRoom'>
-        <h2>Active Room</h2>
-
         <div className='active-rooms'>
           <div className='room' onClick={handleClick}>
-            <img src={room.image} alt={room.title} />
-            <div className='user-number'>active users: {room.activeUser.length}</div>
+            <div className='room-img'>
+              <img src={room.image} alt={room.title} />
+            </div>
+            <div className='room-video'>{room.title}</div>
+            {/* <div className='user-number'>active users: {room.activeUser.length}</div> */}
           </div>
         </div>
 
