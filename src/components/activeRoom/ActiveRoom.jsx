@@ -49,7 +49,7 @@ function ActiveRoom({ room }) {
     localStorage.setItem('partyroom', JSON.stringify(data));
   };
 
-  console.log('----->room:', room);
+  // console.log('----->room:', room);
   return (
     <>
       <div className='active-room' onClick={handleClick}>

@@ -5,7 +5,7 @@ import { Link, Route } from 'react-router-dom';
 import { RiFolderMusicFill } from 'react-icons/ri';
 import { getUserData } from '../../util/localStorage';
 
-function AppHeader({ query, setQuery, setShowUserRoom }) {
+function AppHeader({ query, setQuery, setShowUserRoom, searchYoutube }) {
   // const history = useHistory();
 
   // const handleClick = () => {
@@ -29,7 +29,12 @@ function AppHeader({ query, setQuery, setShowUserRoom }) {
         <h1 className='header-title'>Sync Music and Video</h1>
       </Link>
       <Route exact path='/'>
-        <SearchBar query={query} setQuery={setQuery} className='search-bar' />
+        <SearchBar
+          query={query}
+          setQuery={setQuery}
+          className='search-bar'
+          searchYoutube={searchYoutube}
+        />
       </Route>
 
       {getUserData() && (

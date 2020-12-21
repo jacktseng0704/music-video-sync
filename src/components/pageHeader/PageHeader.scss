@@ -1,10 +1,13 @@
 .PageHeader {
   display: flex;
+  margin-top: 70px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
   min-height: 300px;
+  padding: 20px;
 
   .title {
     font-size: 3rem;
