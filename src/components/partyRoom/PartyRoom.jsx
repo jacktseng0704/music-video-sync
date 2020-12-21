@@ -11,13 +11,14 @@ function Room() {
   const [videoId, setVideoId] = useState('');
   const [showNotification, setShowNotification] = useState(false);
   const [activeUser, setActiveUser] = useState();
-  const { userId, userName } = getUserData();
 
   const { roomId } = useParams();
   const ref = db.collection('partyroom').doc(roomId);
   const activeUserRef = ref.collection('activeUser');
   let youtubeURL = 'https://www.youtube.com/watch?v=';
   let videoURL = `${youtubeURL}${videoId}`;
+  const { userId, userName } = getUserData();
+
   // console.log('roomId', roomId);
 
   useEffect(() => {

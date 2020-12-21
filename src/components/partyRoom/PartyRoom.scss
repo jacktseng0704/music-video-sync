@@ -16,6 +16,7 @@
   }
 
   .info-card {
+    margin-top: 100px;
     border: 1px solid;
     width: 100%;
     padding: 10px;
@@ -57,11 +58,12 @@
   align-items: center;
 
   .share-link {
-    position: relative;
+    // position: relative;
     display: flex;
     width: 80%;
     padding: 20px;
-    margin: 10px 0;
+    top: 70px;
+    margin: 90px 0 10px;
     // border: 1px solid;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;

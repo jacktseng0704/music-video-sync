@@ -8,11 +8,13 @@ import VideoList from '../videoList/VideoList';
 import PartyRoom from '../partyRoom/PartyRoom';
 import UserRoom from '../userRoom/UserRoom';
 import ActiveRoom from '../activeRoom/ActiveRoom';
+import GetUserNameForm from '../getUserNameForm/GetUserNameForm';
 import { fetchYTVideos } from '../../api/youtube';
 // import mockdata from '../../api/mockdata.json';
 import { Route } from 'react-router-dom';
 
 import { roomRef } from '../../firebase';
+import { getUserData } from '../../util/localStorage';
 
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
@@ -20,6 +22,7 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 function App() {
   const [activeRoom, setActiveRoom] = useState(null);
   const [showUserRoom, setShowUserRoom] = useState(false);
+  const [userData, setUserData] = useState(getUserData());
 
   const [loadDB, setLoadDB] = useState(false);
   const [loadYT, setLoadYT] = useState(false);
@@ -105,7 +108,7 @@ function App() {
       </Route>
 
       <Route path='/partyroom/:roomId'>
-        <PartyRoom />
+        {userData ? <PartyRoom /> : <GetUserNameForm setUserData={setUserData} />}
       </Route>
       {/* <Route path='/user/:userId'>
         <UserRoom />
