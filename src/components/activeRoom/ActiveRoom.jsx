@@ -52,37 +52,36 @@ function ActiveRoom({ room }) {
   console.log('----->room:', room);
   return (
     <>
-      <div className='ActiveRoom'>
-        <div className='active-rooms'>
-          <div className='room' onClick={handleClick}>
-            <div className='room-img'>
-              <img src={room.image} alt={room.title} />
-            </div>
-            <div className='room-video'>{room.title}</div>
-            {/* <div className='user-number'>active users: {room.activeUser.length}</div> */}
-          </div>
+      <div className='active-room' onClick={handleClick}>
+        {/* <div className='active-rooms'> */}
+        {/* <div className='room'> */}
+        <div className='room-img'>
+          <img src={room.image} alt={room.title} />
         </div>
-
-        {showForm && (
-          <div className='GuestForm'>
-            <div
-              className='cover'
-              onClick={() => {
-                setShowForm(false);
-              }}></div>
-            <form className='form' onSubmit={handleSubmit}>
-              <h2>Please enter your name to join the room</h2>
-              <input
-                value={userName}
-                onChange={handleChange}
-                ref={inputRef}
-                className='input-field'
-                placeholder='Type your name'
-              />
-            </form>
-          </div>
-        )}
+        <div className='room-video'>{room.title}</div>
+        {/* <div className='user-number'>active users: {room.activeUser.length}</div> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
+      {showForm && (
+        <div className='GuestForm'>
+          <div
+            className='guestform-cover'
+            onClick={() => {
+              setShowForm(false);
+            }}></div>
+          <form className='form' onSubmit={handleSubmit}>
+            <h2>Please enter your name to join the room</h2>
+            <input
+              value={userName}
+              onChange={handleChange}
+              ref={inputRef}
+              className='input-field'
+              placeholder='Type your name'
+            />
+          </form>
+        </div>
+      )}
     </>
   );
 }

@@ -134,21 +134,21 @@ function VideoPlayer({ videoURL, roomId }) {
           // onSeek={(e) => {
           //   console.log('onseek', e);
           // }}
-          // onBuffer={() => {
-          //   setPlaying((prevState) => {
-          //     return true;
-          //   });
+          onBuffer={() => {
+            // setPlaying((prevState) => {
+            //   return true;
+            // });
 
-          //   docRef.update({
-          //     playing: true,
-          //     playingTime: videoRef.current.getCurrentTime(),
-          //   });
+            docRef.update({
+              playing: true,
+              playingTime: videoRef.current.getCurrentTime(),
+            });
 
-          //   console.log('onBuffer playback');
-          //   console.log('playing', playing);
+            console.log('onBuffer playback');
+            //   console.log('playing', playing);
 
-          //   console.log('\n');
-          // }}
+            //   console.log('\n');
+          }}
         />
       </div>
       {/* <button onClick={handlePause}>Pause</button>

@@ -1,41 +1,31 @@
-.ActiveRoom {
+.ActiveRooms {
   // position: relative;
   // border-bottom: 1px solid;
   padding: 20px;
   text-align: center;
-  height: 350px;
+  min-height: 100vh;
 
-  h2 {
-    margin-bottom: 30px;
-  }
-
-  .active-rooms {
+  .active-room {
     display: flex;
-    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s;
 
-    .room {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 5px;
+    &:hover {
+      transform: translateY(-10%);
+    }
+
+    img {
       width: 100%;
-      cursor: pointer;
-      transition: transform 0.5s;
+    }
 
-      &:hover {
-        transform: translateY(-10%);
-      }
-
-      .room-img {
-        img {
-          width: 100%;
-        }
-      }
-
-      .user-number {
-        margin-top: auto;
-        margin-bottom: 20px;
-      }
+    .user-number {
+      margin-top: auto;
+      margin-bottom: 20px;
     }
   }
 }
@@ -48,7 +38,8 @@
   background-color: rgba(0, 0, 0, 0.9);
   min-height: 100vh;
   min-width: 100vw;
-  .cover {
+
+  .guestform-cover {
     min-height: 100vh;
     min-width: 100vw;
     z-index: 1;
@@ -69,12 +60,24 @@
     transform: translate(50%, -50%);
     z-index: 2;
     margin: 0 auto;
+    animation: 0.7s sliding2;
 
     .input-field {
       margin: 20px;
       padding: 10px;
       border-radius: 5px;
     }
+  }
+}
+
+@keyframes sliding2 {
+  from {
+    transform: translate(-100%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(50%, -50%);
+    opacity: 1;
   }
 }
 

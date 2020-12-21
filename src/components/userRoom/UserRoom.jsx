@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import './UserRoom.scss';
 import { db } from '../../firebase';
+import { getUserData } from '../../util/localStorage';
 import UserRoomCard from '../userRoomCard/UserRoomCard';
 
-function UserRoom() {
+function UserRoom({ setShowUserRoom }) {
   const [userRoom, setUserRoom] = useState();
-  const { userId } = useParams();
+  // const { userId } = useParams();
 
   useEffect(() => {
+    let { userId } = getUserData();
     let data = [];
     db.collection('partyroom')
       .where('userId', '==', userId)
@@ -25,11 +27,18 @@ function UserRoom() {
 
   return (
     <>
+      <div
+        className='cover'
+        onClick={() => {
+          setShowUserRoom((prevState) => !prevState);
+        }}></div>
       <div className='UserRoom'>
         {/* <h2>User id : {userId}</h2> */}
-        <h2>Your rooms</h2>
-        <div className='room-card'>
-          {userRoom && userRoom.map((room, i) => <UserRoomCard key={i} room={room} />)}
+        <div className='user-room'>
+          <h2>Your rooms</h2>
+          <div className='room-card'>
+            {userRoom && userRoom.map((room, i) => <UserRoomCard key={i} room={room} />)}
+          </div>
         </div>
       </div>
     </>

@@ -1,20 +1,37 @@
+.cover {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: grey;
+  opacity: 0.9;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 .UserRoom {
   // border: 1px solid;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   background-color: white;
+  z-index: 2;
+
   border-radius: 4px;
   text-align: center;
-  min-height: 100vh;
-  max-width: 1000px;
-  margin: 80px auto 20px;
-  padding: 40px;
+  height: calc(100% - 80px);
+  width: 300px;
+  margin: 80px auto 50px;
+  padding: 0px;
   border-radius: 10px;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+  animation: sliding3 0.8s;
 
   h2 {
     text-align: center;
-    padding: 40px;
+    padding-top: 40px;
   }
 
   .room-card {
@@ -26,8 +43,19 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .UserRoom {
-    max-width: 80%;
+@keyframes sliding3 {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
+
+// @media (max-width: 1000px) {
+//   .UserRoom {
+//     max-width: 80%;
+//   }
+// }

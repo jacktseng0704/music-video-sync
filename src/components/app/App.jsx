@@ -17,6 +17,7 @@ import { roomRef } from '../../firebase';
 
 function App() {
   const [activeRoom, setActiveRoom] = useState(null);
+  const [showUserRoom, setShowUserRoom] = useState(false);
 
   const [query, setQuery] = useState('bruno mars');
   // const [videoList, setVideoList] = useState(null);
@@ -45,7 +46,7 @@ function App() {
 
   return (
     <div className='App'>
-      <AppHeader query={query} setQuery={setQuery} />
+      <AppHeader query={query} setQuery={setQuery} setShowUserRoom={setShowUserRoom} />
       <Route exact path='/'>
         <div className='main-section'>
           <div className='ActiveRooms'>
@@ -63,14 +64,15 @@ function App() {
             <VideoList videoList={mockdata} />
           </div>
         </div>
+        {showUserRoom && <UserRoom setShowUserRoom={setShowUserRoom} />}
       </Route>
 
       <Route path='/partyroom/:roomId'>
         <PartyRoom />
       </Route>
-      <Route path='/user/:userId'>
+      {/* <Route path='/user/:userId'>
         <UserRoom />
-      </Route>
+      </Route> */}
     </div>
   );
 }

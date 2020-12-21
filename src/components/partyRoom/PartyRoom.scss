@@ -1,3 +1,54 @@
+.info-box {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  text-align: center;
+  padding: 10px;
+  top: 85px;
+  left: 10px;
+  border-radius: 5px;
+  width: 300px;
+  height: 50vh;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+
+  h2 {
+    padding: 10px;
+  }
+
+  .info-card {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.active-users {
+  position: fixed;
+  top: 85px;
+  right: 10px;
+  // margin-top: 30px;
+  width: 300px;
+  // height: 100px;
+  // border: 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+
+  h3 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    border-bottom: 1px solid;
+  }
+
+  .user-name {
+    padding: 5px;
+    // border: 1px solid;
+  }
+}
+
 .PartyRoom {
   margin: 0 auto;
   max-width: 1000px;
@@ -43,30 +94,6 @@
       animation: 3s sliding both cubic-bezier(0.075, 0.82, 0.165, 1);
     }
   }
-
-  .active-users {
-    margin-top: 30px;
-    width: 80%;
-    // height: 100px;
-    // border: 1px solid;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
-
-    h3 {
-      text-align: center;
-      padding-bottom: 10px;
-    }
-
-    .title {
-      border-bottom: 1px solid;
-    }
-
-    .user-name {
-      padding: 5px;
-      // border: 1px solid;
-    }
-  }
 }
 
 @keyframes sliding {
@@ -98,5 +125,20 @@
   100% {
     transform: translateX(100%);
     opacity: 0;
+  }
+}
+
+@media (max-width: 1439px) {
+  .info-box {
+    display: none;
+    position: static;
+
+    color: red;
+  }
+
+  .active-users {
+    display: none;
+    position: static;
+    color: red;
   }
 }

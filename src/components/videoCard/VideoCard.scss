@@ -1,7 +1,10 @@
 .VideoCard {
+  background-color: rgb(23, 23, 23);
+  --lh: 1.4rem;
+  line-height: var(--lh);
+
   width: 200px;
   height: 200px;
-  // border: 1px solid;
   border-radius: 4px;
   margin: 10px;
   // box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
@@ -20,7 +23,12 @@
     width: 100%;
   }
 
-  p {
+  .card-title {
+    color: white;
     text-align: center;
+    overflow: hidden;
+    --max-lines: 2;
+    max-height: calc(var(--lh) * var(--max-lines));
+    overflow: hidden;
   }
 }

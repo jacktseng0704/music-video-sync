@@ -8,6 +8,7 @@ function VideoCard({ video }) {
 
   const handleClick = () => {
     setShowModal(true);
+    console.log('show modla');
   };
 
   return (
@@ -15,7 +16,7 @@ function VideoCard({ video }) {
       {showModal && <ModalForm setShowModal={setShowModal} video={video} />}
       <div className='VideoCard' onClick={handleClick} id={id.videoId}>
         <img src={snippet.thumbnails.medium.url} alt={snippet.description} />
-        <p>{snippet.title}</p>
+        <p className='card-title'>{snippet.title}</p>
       </div>
     </>
   );
