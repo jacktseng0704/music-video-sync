@@ -88,21 +88,21 @@ function Room() {
 
   return (
     <>
-      <div className='info-box'>
+      {/* <div className='info-box'>
         <h2>Welcome to the room!</h2>
         <div className='info-card info-card1'>Bruno Mars</div>
-      </div>
-      <div className='active-users'>
-        <h3 className='title'>Users in the room</h3>
-        {activeUser &&
-          activeUser.length &&
-          activeUser.map((user) => <div className='user-name'>{user.userName}</div>)}
-      </div>
+      </div> */}
       <main className='PartyRoom'>
         <div className='share-link'>
           <p>Click the icon to invite your friends</p>
           <HiShare className='share-icon' size={20} onClick={copyURL} />
           {showNotification && <div className='notification'>Copied link!</div>}
+        </div>
+        <div className='active-users'>
+          <h3 className='title'>Users in the room</h3>
+          {activeUser &&
+            activeUser.length &&
+            activeUser.map((user) => <div className='user-name'>{user.userName}</div>)}
         </div>
         {/* <h3>Party room id: {roomId}</h3> */}
         {videoId && <VideoPlayer videoURL={videoURL} roomId={roomId} />}

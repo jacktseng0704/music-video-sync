@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 
 function GetUserNameForm({ setUserData }) {
   const [userName, setUserName] = useState('');
-  const [userId, setUserId] = useState(nanoid());
+  const [userId, setUserId] = useState(nanoid(10));
 
   const handleChange = (e) => {
     setUserName(e.target.value);
@@ -27,7 +27,7 @@ function GetUserNameForm({ setUserData }) {
 
   return (
     <>
-      <div className='GuestForm'>
+      <div className='GuestForm GetUserNameForm'>
         <form className='form' onSubmit={handleSubmit}>
           <h2>Please enter your name to join the room</h2>
           <input

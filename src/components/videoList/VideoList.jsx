@@ -2,7 +2,7 @@ import React from 'react';
 import './VideoList.scss';
 import VideoCard from '../videoCard/VideoCard';
 
-function VideoList({ videoList }) {
+function VideoList({ videoList, setUserData }) {
   // console.log('Video List: ', videoList);
 
   return (
@@ -14,7 +14,9 @@ function VideoList({ videoList }) {
             (videoList.length === 0 ? (
               <p>No video found</p>
             ) : (
-              videoList.map((video, index) => <VideoCard video={video} key={index} />)
+              videoList.map((video, index) => (
+                <VideoCard video={video} key={index} setUserData={setUserData} />
+              ))
             ))}
         </div>
       </main>

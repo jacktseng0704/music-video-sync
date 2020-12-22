@@ -11,7 +11,7 @@ function InputBox({ roomId }) {
   const messageRef = db.collection('partyroom').doc(roomId).collection('messages');
 
   const handleChange = (e) => {
-    setInputMessage(e.target.value.trim());
+    setInputMessage(e.target.value);
   };
 
   const handleSubmit = (e) => {

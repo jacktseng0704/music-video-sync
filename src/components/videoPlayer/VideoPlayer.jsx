@@ -65,7 +65,22 @@ function VideoPlayer({ videoURL, roomId }) {
 
   useEffect(() => {
     monitorFirestore();
+
+    // const updatePlayingTime = () => {
+    //   docRef.update({
+    //     playingTime,
+    //   });
+    // };
+
+    // window.addEventListener('beforeunload', updatePlayingTime);
+
+    // return () => {
+    //   updatePlayingTime();
+    //   window.removeEventListener('beforeunload', updatePlayingTime);
+    // };
   }, []);
+
+  // console.log('playing time', playingTime);
 
   return (
     <>
@@ -138,15 +153,12 @@ function VideoPlayer({ videoURL, roomId }) {
             // setPlaying((prevState) => {
             //   return true;
             // });
-
-            docRef.update({
-              playing: true,
-              playingTime: videoRef.current.getCurrentTime(),
-            });
-
-            console.log('onBuffer playback');
+            // docRef.update({
+            //   playing: true,
+            //   playingTime: videoRef.current.getCurrentTime(),
+            // });
+            // console.log('onBuffer playback');
             //   console.log('playing', playing);
-
             //   console.log('\n');
           }}
         />

@@ -80,7 +80,9 @@ function App() {
             ) : (
               activeRoom &&
               activeRoom.length !== 0 &&
-              activeRoom.map((room, i) => <ActiveRoom key={i} room={room} />)
+              activeRoom.map((room, i) => (
+                <ActiveRoom key={i} room={room} userData={userData} setUserData={setUserData} />
+              ))
             )}
           </div>
           <div className='right-side'>
@@ -98,7 +100,7 @@ function App() {
                 timeout={3000} //3 secs
               />
             ) : (
-              <VideoList videoList={videoList} />
+              <VideoList videoList={videoList} setUserData={setUserData} />
             )}
             {/* <VideoList videoList={videoList} /> */}
             {/* <VideoList videoList={mockdata} /> */}
@@ -108,7 +110,7 @@ function App() {
       </Route>
 
       <Route path='/partyroom/:roomId'>
-        {userData ? <PartyRoom /> : <GetUserNameForm setUserData={setUserData} />}
+        {userData !== null ? <PartyRoom /> : <GetUserNameForm setUserData={setUserData} />}
       </Route>
       {/* <Route path='/user/:userId'>
         <UserRoom />

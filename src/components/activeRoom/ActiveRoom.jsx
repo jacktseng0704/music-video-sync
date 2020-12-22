@@ -2,9 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import './ActiveRoom.scss';
 import { useHistory } from 'react-router-dom';
 import { nanoid } from 'nanoid';
+import { getUserData } from '../../util/localStorage';
 // import firebase, { roomRef } from '../../firebase';
 
-function ActiveRoom({ room }) {
+function ActiveRoom({ room, setUserData }) {
   const history = useHistory();
   const [userId] = useState(nanoid(10));
   const [userName, setUserName] = useState('');
@@ -47,6 +48,7 @@ function ActiveRoom({ room }) {
       userName,
     };
     localStorage.setItem('partyroom', JSON.stringify(data));
+    setUserData(data);
   };
 
   // console.log('----->room:', room);
@@ -59,7 +61,9 @@ function ActiveRoom({ room }) {
           <img src={room.image} alt={room.title} />
         </div>
         <div className='room-video'>{room.title}</div>
-        {/* <div className='user-number'>active users: {room.activeUser.length}</div> */}
+        <div className='user-number'>active users: {room.activeUser.length}</div>
+        <div className='host'>host: {room.userName}</div>
+
         {/* </div> */}
         {/* </div> */}
       </div>

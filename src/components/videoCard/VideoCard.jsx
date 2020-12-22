@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import './VideoCard.scss';
 import ModalForm from '../modalForm/ModalForm';
 
-function VideoCard({ video }) {
+function VideoCard({ video, setUserData }) {
   const [showModal, setShowModal] = useState(false);
   const { snippet, id } = video;
 
   const handleClick = () => {
     setShowModal(true);
-    console.log('show modla');
   };
 
   return (
     <>
-      {showModal && <ModalForm setShowModal={setShowModal} video={video} />}
+      {showModal && (
+        <ModalForm setShowModal={setShowModal} video={video} setUserData={setUserData} />
+      )}
       <div className='VideoCard' onClick={handleClick} id={id.videoId}>
         <img src={snippet.thumbnails.medium.url} alt={snippet.description} />
         <p className='card-title'>{snippet.title}</p>

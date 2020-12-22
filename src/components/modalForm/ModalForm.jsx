@@ -6,7 +6,7 @@ import { db } from '../../firebase';
 import useOutsideClick from '../../util/modal';
 import OldUserForm from '../oldUserForm/OldUserForm';
 
-function ModalForm({ setShowModal, video }) {
+function ModalForm({ setShowModal, video, setUserData }) {
   const ref = useRef();
   const inputRef = useRef();
   const [name, setName] = useState('');
@@ -41,7 +41,7 @@ function ModalForm({ setShowModal, video }) {
       console.log('new room created!');
       await createRoom(localStorageData);
     }
-
+    setUserData(localStorageData);
     console.log('user id:', localStorageData.userId);
     console.log('video', video);
     console.log('\n');
