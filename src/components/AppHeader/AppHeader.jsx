@@ -28,6 +28,7 @@ function AppHeader({ query, setQuery, setShowUserRoom, searchYoutube }) {
       <Link to='/' className='link'>
         <h1 className='header-title'>Music Video Sync</h1>
       </Link>
+      {getUserData() && <span className='user-name'>{`Hi~ ${getUserData().userName}`}</span>}
       <Route exact path='/'>
         <SearchBar
           query={query}

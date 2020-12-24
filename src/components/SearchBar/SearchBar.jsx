@@ -1,11 +1,14 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './SearchBar.scss';
-import { IoSearchCircleSharp } from 'react-icons/io5';
+// import { IoSearchCircleSharp } from 'react-icons/io5';
+import { AiOutlineSearch } from 'react-icons/ai';
 import { suggest } from '../../api/youtube';
+import useOutsideClick from '../../util/modal';
 
 function SearchBar({ query, setQuery, searchYoutube }) {
   const [value, setValue] = useState('');
   const [suggestions, setSuggestions] = useState(null);
+  const [inputFocus, setInputFocus] = useState(false);
 
   const handleChange = (e) => {
     onTypeSuggest(e.target.value);
@@ -16,6 +19,7 @@ function SearchBar({ query, setQuery, searchYoutube }) {
     if (queryString.length < 5) {
       return null;
     }
+
     const list = await suggest(queryString);
     return setSuggestions(list);
   };
@@ -27,20 +31,37 @@ function SearchBar({ query, setQuery, searchYoutube }) {
   };
 
   const onSearch = async (queryString) => {
-    const results = await searchYoutube(queryString);
+    setInputFocus(false);
     setValue('');
+    const results = await searchYoutube(queryString);
     setSuggestions(null);
 
     console.log(results);
   };
 
+  const handleFocus = () => {
+    setInputFocus(true);
+  };
+
   return (
     <>
-      <form className='search-bar' onSubmit={handleSubmit}>
+      <form
+        className='search-bar'
+        onSubmit={handleSubmit}
+        onFocus={(e) => {
+          console.log((e.currentTarget.style.width = '50%'));
+        }}>
         <div className='input-container'>
           {/* <IoSearchCircleSharp className='search-icon' size={30} /> */}
-          <input type='search' value={value} onChange={handleChange} placeholder='Search...' />
-          <Suggestions onSearch={onSearch} items={suggestions} />
+          <AiOutlineSearch className='search-icon' size={30} />
+          <input
+            type='text'
+            value={value}
+            onChange={handleChange}
+            placeholder='Search...'
+            onFocus={handleFocus}
+          />
+          {value && inputFocus && <Suggestions onSearch={onSearch} items={suggestions} />}
         </div>
       </form>
     </>
@@ -48,10 +69,17 @@ function SearchBar({ query, setQuery, searchYoutube }) {
 }
 
 function Suggestions({ onSearch, items }) {
+  // const suggestRef = useRef();
+
+  // useOutsideClick(suggestRef, () => {
+  //   console.log((suggestRef.current.style.display = 'none'));
+  // });
+
   if (!items || !items.length) {
     return null;
   }
   return (
+    // <section className='section' ref={suggestRef}>
     <section className='section'>
       {' '}
       {items.map((item, key) => {

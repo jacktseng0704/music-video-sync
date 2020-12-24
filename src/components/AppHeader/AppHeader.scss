@@ -13,6 +13,12 @@
   box-shadow: rgba(40, 35, 45, 0.1) 0px 1px 8px 0px;
   justify-content: space-between;
 
+  .user-name {
+    font-size: large;
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
   .link {
     text-decoration: none;
   }
@@ -23,7 +29,7 @@
   }
 
   .search-bar {
-    margin-left: auto;
+    // margin-left: auto;
   }
 
   .user-room {
