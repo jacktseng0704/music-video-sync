@@ -6,6 +6,10 @@
   min-height: 100vh;
   max-width: 300px;
 
+  .title {
+    font-size: 1.3rem;
+  }
+
   .active-room {
     display: flex;
     flex-direction: column;

@@ -26,7 +26,7 @@ function AppHeader({ query, setQuery, setShowUserRoom, searchYoutube }) {
   return (
     <header className='AppHeader'>
       <Link to='/' className='link'>
-        <h1 className='header-title'>Sync Music and Video</h1>
+        <h1 className='header-title'>Music Video Sync</h1>
       </Link>
       <Route exact path='/'>
         <SearchBar
@@ -40,7 +40,7 @@ function AppHeader({ query, setQuery, setShowUserRoom, searchYoutube }) {
       {getUserData() && (
         <div className='user-room' onClick={handleClick}>
           {/* User's room */}
-          <RiFolderMusicFill size={30} />
+          <RiFolderMusicFill size={50} />
         </div>
       )}
     </header>

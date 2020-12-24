@@ -1,15 +1,18 @@
 import React from 'react';
 import './ChatMessage.scss';
+import { getUserData } from '../../util/localStorage';
 
 function ChatMessage({ message }) {
+  const { userId } = getUserData();
+
   return (
     <div className='ChatMessage'>
-      <span>{message.user}: </span>
+      <div className='chat-user'>{message.user}: </div>
       <p>{message.content}</p>
-      <span className='message-time'>
+      {/* <div className='message-time'>
         {message.timeSent &&
           new Date(message.timeSent?.seconds * 1000).toLocaleTimeString('zh-Hans-TW')}
-      </span>
+      </div> */}
     </div>
   );
 }

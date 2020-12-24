@@ -5,6 +5,7 @@ import firebase, { db } from '../../firebase';
 import { getUserData } from '../../util/localStorage';
 import ChatBox from '../chatBox/ChatBox';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
+import YtSearch from '../ytSearch/YtSearch';
 import { HiShare } from 'react-icons/hi';
 
 function Room() {
@@ -26,6 +27,10 @@ function Room() {
       // console.log(doc.data());
       setVideoId(doc.data().videoId);
       // setActiveUser(doc.data().activeUser);
+    });
+
+    ref.onSnapshot((doc) => {
+      setVideoId(doc.data().videoId);
     });
 
     // activeUserRef.onSnapshot();
@@ -93,6 +98,8 @@ function Room() {
         <div className='info-card info-card1'>Bruno Mars</div>
       </div> */}
       <main className='PartyRoom'>
+        <YtSearch setVideoId={setVideoId} firebase={ref} />
+
         <div className='share-link'>
           <p>Click the icon to invite your friends</p>
           <HiShare className='share-icon' size={20} onClick={copyURL} />

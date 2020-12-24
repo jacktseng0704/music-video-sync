@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './InputBox.scss';
+import sendIcon from '../../images/send.svg';
 import firebase from '../../firebase';
 import { getUserData } from '../../util/localStorage';
 
@@ -37,7 +38,10 @@ function InputBox({ roomId }) {
         onChange={handleChange}
         value={inputMessage}
       />
-      <input className='submit-btn' type='submit' disabled={!inputMessage} />
+      {/* <input className='submit-btn' type='submit' disabled={!inputMessage} /> */}
+      <button className='input-btn' disabled={!inputMessage}>
+        <img src={sendIcon} alt='send-icon' />
+      </button>
     </form>
   );
 }

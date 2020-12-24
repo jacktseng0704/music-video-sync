@@ -1,7 +1,7 @@
 .info-box {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  // position: fixed;
   text-align: center;
   padding: 10px;
   top: 85px;
@@ -24,11 +24,11 @@
 }
 
 .active-users {
-  position: fixed;
-  top: 85px;
-  right: 10px;
+  // position: fixed;
+  // top: 85px;
+  // left: 10px;
   // margin-top: 30px;
-  width: 300px;
+  // width: 300px;
   // height: 100px;
   // border: 1px solid;
   border-radius: 5px;
@@ -51,26 +51,24 @@
 }
 
 .PartyRoom {
-  margin: 0 auto;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // margin: 0 auto;
+  height: calc(100vh - 90px);
+  // max-width: 1000px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 
   .share-link {
     position: relative;
     display: flex;
-    width: 80%;
     padding: 20px;
-    margin: 90px 0 10px;
-    // border: 1px solid;
+    margin-bottom: 10px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;
 
     align-items: center;
 
     .share-icon {
-      // border: 1px solid;
       margin-left: 10px;
 
       &:hover {
@@ -91,9 +89,49 @@
       right: 20px;
       border: 1px solid;
       border-radius: 5px;
-      position: absolute;
+      // position: absolute;
       animation: 3s sliding both cubic-bezier(0.075, 0.82, 0.165, 1);
     }
+  }
+}
+
+.PartyRoom {
+  margin-top: 10px;
+  max-width: 100vw;
+  // margin-top: 90px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 300px auto 400px;
+  grid-template-rows: 50px 100px 100px 1fr;
+
+  .active-users {
+    // grid-row: 1/-1;
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  .VideoPlayer {
+    align-self: start;
+    // grid-row: 1/-1;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .ChatBox {
+    // grid-row: 1/-1;
+    grid-column: 3/4;
+    grid-row: 3/-1;
+  }
+
+  .share-link {
+    // grid-row: 1/-1;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .YtPlayList {
+    grid-column: 1;
+    grid-row: 1/-1;
   }
 }
 
@@ -129,19 +167,19 @@
   }
 }
 
-@media (max-width: 1439px) {
-  .info-box {
-    display: none;
-    position: static;
+// @media (max-width: 1439px) {
+//   .info-box {
+//     display: none;
+//     position: static;
 
-    color: red;
-  }
+//     color: red;
+//   }
 
-  .active-users {
-    // display: none;
-    width: 80%;
-    position: static;
-    margin-bottom: 10px;
-    // color: red;
-  }
-}
+//   .active-users {
+//     // display: none;
+//     width: 80%;
+//     position: static;
+//     margin-bottom: 10px;
+//     // color: red;
+//   }
+// }
