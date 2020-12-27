@@ -6,12 +6,16 @@ import { getUserData } from '../../util/localStorage';
 import ChatBox from '../chatBox/ChatBox';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
 import YtSearch from '../ytSearch/YtSearch';
+import YtPlaylist from '../ytPlaylist/YtPlaylist';
 import { HiShare } from 'react-icons/hi';
 
 function Room() {
   const [videoId, setVideoId] = useState('');
   const [showNotification, setShowNotification] = useState(false);
   const [activeUser, setActiveUser] = useState();
+  const [showMessage, setShowMessage] = useState(true);
+  const [showPlaylist, setShowPlaylist] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
 
   const { roomId } = useParams();
   const ref = db.collection('partyroom').doc(roomId);
@@ -60,36 +64,36 @@ function Room() {
       window.removeEventListener('beforeunload', updateUserStatus);
     };
   }, []);
-  console.log('user id:', userId);
+  // console.log('user id:', userId);
   // console.log('active users:', activeUser);
 
   const monitorActiveUsers = () => {
     const unsubscribe = activeUserRef.onSnapshot((snap) => {
       const data = snap.docs.map((doc) => doc.data());
-      console.log('Current data: ', data);
+      // console.log('Current data: ', data);
       setActiveUser(data);
     });
     return () => unsubscribe();
   };
-  console.log('active users:', activeUser);
+  // console.log('active users:', activeUser);
 
-  const copyURL = () => {
-    const URL = window.location.href;
-    textToClipboard(URL);
-    setShowNotification(true);
-    setTimeout(() => {
-      setShowNotification(false);
-    }, 3000);
-  };
+  // const copyURL = () => {
+  //   const URL = window.location.href;
+  //   textToClipboard(URL);
+  //   setShowNotification(true);
+  //   setTimeout(() => {
+  //     setShowNotification(false);
+  //   }, 3000);
+  // };
 
-  const textToClipboard = (text) => {
-    let dummy = document.createElement('textarea');
-    document.body.appendChild(dummy);
-    dummy.value = text;
-    dummy.select();
-    document.execCommand('copy');
-    document.body.removeChild(dummy);
-  };
+  // const textToClipboard = (text) => {
+  //   let dummy = document.createElement('textarea');
+  //   document.body.appendChild(dummy);
+  //   dummy.value = text;
+  //   dummy.select();
+  //   document.execCommand('copy');
+  //   document.body.removeChild(dummy);
+  // };
 
   return (
     <>
@@ -98,23 +102,50 @@ function Room() {
         <div className='info-card info-card1'>Bruno Mars</div>
       </div> */}
       <main className='PartyRoom'>
-        <YtSearch setVideoId={setVideoId} firebase={ref} />
-
-        <div className='share-link'>
+        {/* <div className='share-link'>
           <p>Click the icon to invite your friends</p>
           <HiShare className='share-icon' size={20} onClick={copyURL} />
-          {showNotification && <div className='notification'>Copied link!</div>}
+          {showNotification && <div className='notification'>Link Copied!</div>}
+        </div> */}
+        <div className='toggle-items'>
+          <div
+            className={`chat-box item ${showMessage && 'selected'}`}
+            onClick={() => {
+              setShowMessage(true);
+              setShowPlaylist(false);
+              setShowSearch(false);
+            }}>
+            Messages
+          </div>
+          <div
+            className={`playlist item ${showPlaylist && 'selected'}`}
+            onClick={() => {
+              setShowPlaylist(true);
+              setShowMessage(false);
+              setShowSearch(false);
+            }}>
+            Playlist
+          </div>
+          <div
+            className={`search item ${showSearch && 'selected'}`}
+            onClick={() => {
+              setShowSearch(true);
+              setShowMessage(false);
+              setShowPlaylist(false);
+            }}>
+            Search
+          </div>
         </div>
-        <div className='active-users'>
-          <h3 className='title'>Users in the room</h3>
-          {activeUser &&
-            activeUser.length &&
-            activeUser.map((user) => <div className='user-name'>{user.userName}</div>)}
-        </div>
+
         {/* <h3>Party room id: {roomId}</h3> */}
         {videoId && <VideoPlayer videoURL={videoURL} roomId={roomId} />}
 
-        <ChatBox roomId={roomId} />
+        {showSearch && <YtSearch setVideoId={setVideoId} firebase={ref} />}
+        {showMessage && (
+          <ChatBox roomId={roomId} activeUser={activeUser} showMessage={showMessage} />
+        )}
+
+        {showPlaylist && <YtPlaylist roomId={roomId} />}
       </main>
     </>
   );

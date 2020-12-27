@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import './InputBox.scss';
 import sendIcon from '../../images/send.svg';
-import firebase from '../../firebase';
+import firebase, { db } from '../../firebase';
 import { getUserData } from '../../util/localStorage';
 
 function InputBox({ roomId }) {
   const [inputMessage, setInputMessage] = useState('');
   const { userName } = getUserData();
 
-  const db = firebase.firestore();
   const messageRef = db.collection('partyroom').doc(roomId).collection('messages');
 
   const handleChange = (e) => {

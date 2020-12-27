@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './YtSearch.scss';
 import SearchBar from '../searchBar/SearchBar';
 import Loader from 'react-loader-spinner';
 import { fetchYTVideos } from '../../api/youtube';
 import { useParams } from 'react-router-dom';
-import { db } from '../../firebase';
+import firebase, { db } from '../../firebase';
 
-function YtPlayList({ setVideoId }) {
-  const [query, setQuery] = useState('');
+function YtSearch({ setVideoId }) {
+  const [query, setQuery] = useState('2020 top hits');
   const [loadYt, setLoadYt] = useState(false);
   const [videoList, setVideoList] = useState(null);
 
@@ -18,10 +18,15 @@ function YtPlayList({ setVideoId }) {
     setLoadYt(false);
     setVideoList(result.data.items);
   };
-  // console.log('videoList', videoList);
+  console.log('videoList', videoList);
+
+  useEffect(() => {
+    console.log(`query: ${query}`);
+    searchYoutube(query);
+  }, [query]);
 
   return (
-    <div className='YtPlayList'>
+    <div className='YtSearch'>
       <SearchBar
         query={query}
         setQuery={setQuery}
@@ -62,15 +67,28 @@ function VideoCard({ video }) {
   const { roomId } = useParams();
   const { snippet, id } = video;
   const ref = db.collection('partyroom').doc(roomId);
+  const playlistRef = ref.collection('playlist');
+
+  const addSongToFirebase = () => {
+    playlistRef.add({
+      videoId: id.videoId,
+      image: snippet.thumbnails.medium.url,
+      title: snippet.title,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+  };
 
   const handleClick = () => {
     console.log('Change video', id.videoId);
     console.log('roomId', roomId);
-    ref.update({
-      videoId: id.videoId,
-      image: snippet.thumbnails.medium.url,
-      title: snippet.title,
-    });
+
+    addSongToFirebase();
+
+    // ref.update({
+    //   videoId: id.videoId,
+    //   image: snippet.thumbnails.medium.url,
+    //   title: snippet.title,
+    // });
     // setVideoId(id.videoId);
   };
 
@@ -82,4 +100,4 @@ function VideoCard({ video }) {
   );
 }
 
-export default YtPlayList;
+export default YtSearch;

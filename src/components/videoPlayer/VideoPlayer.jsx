@@ -28,8 +28,10 @@ function VideoPlayer({ videoURL, roomId }) {
       videoRef.current.seekTo(doc?.data()?.playingTime);
 
       if (playingStatus) {
+        setPlaying(true);
         videoRef.current.getInternalPlayer().playVideo();
       } else {
+        setPlaying(false);
         videoRef.current.getInternalPlayer().pauseVideo();
       }
 
@@ -97,19 +99,27 @@ function VideoPlayer({ videoURL, roomId }) {
             console.log('onReady callback');
             console.log('someone joined the room!');
             console.log('\n');
+            docRef.update({
+              playing: false,
+              playingTime: 0,
+            });
           }}
           onStart={() => {
             console.log('onStart callback');
             console.log('\n');
+            docRef.update({
+              playing: true,
+              playingTime: 0,
+            });
           }}
           onPlay={() => {
-            setPlaying(true);
+            // setPlaying(true);
 
             // setPlaying((prevState) => {
             //   console.log('prevState', prevState);
-            docRef.update({
-              playing: true,
-            });
+            // docRef.update({
+            //   playing: true,
+            // });
 
             //   return true;
             // });
@@ -136,13 +146,13 @@ function VideoPlayer({ videoURL, roomId }) {
           // onError={() => {
           //   console.log('onReady callback');
           // }}
-          onProgress={
-            handleOnProgress
-            // () => {
-            //   console.log('onProgress callback');
-            //   console.log('\n');
-            // }
-          }
+          // onProgress={
+          //   handleOnProgress
+          //   // () => {
+          //   //   console.log('onProgress callback');
+          //   //   console.log('\n');
+          //   // }
+          // }
           // onDuration={(state) => {
           //   console.log(state);
           // }}
@@ -153,10 +163,10 @@ function VideoPlayer({ videoURL, roomId }) {
             // setPlaying((prevState) => {
             //   return true;
             // });
-            // docRef.update({
-            //   playing: true,
-            //   playingTime: videoRef.current.getCurrentTime(),
-            // });
+            docRef.update({
+              playing: true,
+              playingTime: videoRef.current.getCurrentTime(),
+            });
             // console.log('onBuffer playback');
             //   console.log('playing', playing);
             //   console.log('\n');

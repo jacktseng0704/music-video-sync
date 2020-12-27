@@ -1,17 +1,21 @@
 .AppHeader {
-  // position: fixed;
+  position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
   display: flex;
-  background-color: white;
+  // background-color: rgb(254, 252, 252);
+  color: black;
+  background: #ffe200;
   align-items: center;
-  min-height: 70px;
+  height: 70px;
   padding: 20px;
   // margin-bottom: 10px;
   // box-shadow: 5px 5px 20px 2px #6f6e6e;
-  border-bottom: 1px solid rgb(242, 242, 242);
+  // border-bottom: 1px solid rgb(242, 242, 242);
   box-shadow: rgba(40, 35, 45, 0.1) 0px 1px 8px 0px;
   justify-content: space-between;
+  animation: animatedNavBar 1s;
 
   .user-name {
     font-size: large;
@@ -24,20 +28,95 @@
   }
 
   .header-title {
-    color: gray;
-    font-size: 2rem;
+    color: rgb(4, 4, 4);
+    font-size: 1.7rem;
+    transition: 0.4s;
+
+    &:hover {
+      transform: translateX(10px);
+      color: rgba(77, 77, 77, 1);
+    }
+  }
+
+  .add-icon {
+    // border: 1px solid;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover {
+      transform: translateY(-5px);
+      cursor: pointer;
+      color: red;
+    }
   }
 
   .search-bar {
     // margin-left: auto;
   }
 
+  .share-link {
+    position: relative;
+    display: flex;
+
+    .share-icon {
+      transition: 0.4s;
+
+      margin-left: 10px;
+
+      &:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+
   .user-room {
     cursor: pointer;
-    transition: color 0.3s;
+    transition: 0.4s;
 
     &:hover {
+      transform: translateY(-5px);
+
       color: red;
     }
+  }
+}
+
+.notification {
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(38, 172, 38);
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+
+  animation: 3s sliding both cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes animatedNavBar {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  // 25% {
+  //   transform: translateY(-200%);
+  //   opacity: 0;
+  // }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }

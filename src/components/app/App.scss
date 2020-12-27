@@ -1,7 +1,3 @@
-.loading-db {
-  margin-top: 50px;
-}
-
 .loading-yt {
   position: absolute;
   top: 60%;
@@ -11,16 +7,112 @@
 .App {
   position: relative;
 
-  .main-section {
+  .main-image {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../images/headphones.jpg');
+    background-size: cover;
+    background-position: 25% 40%;
+    animation: animatedBg 2s;
+
+    .content {
+      position: relative;
+      // border: 1px solid;
+
+      .main-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        // background-color: rgba(40, 35, 45, 0.2);
+        width: 40%;
+        height: 50%;
+
+        font-size: 4rem;
+        margin: 5%;
+        animation: slidingText 2s;
+      }
+
+      button:hover {
+        cursor: pointer;
+        transform: translateY(-20%);
+        // background: blue;
+        background: black;
+        color: white;
+      }
+
+      .explore-btn {
+        transition: 0.5s;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: white;
+
+        // background-color: #008cba;
+        color: white;
+        // position: absolute;
+        border: 1px solid;
+        border-radius: 10px;
+
+        width: 20%;
+        margin-left: 10%;
+        background-color: white;
+        color: black;
+        // border: 2px solid #4caf50;
+        padding: 20px 0;
+        animation: slidingBtn 3s;
+        opacity: 1;
+      }
+    }
+  }
+
+  .main-section {
     max-width: 100vw;
+    margin-top: 120px;
+    height: calc(100vh - 70px);
+
+    .main-message {
+      // border: 1px solid;
+      text-align: center;
+      padding: 40px 0;
+      animation: 4s animatedText;
+
+      h3 {
+        font-size: 5rem;
+      }
+      p {
+        color: rgb(67, 66, 66);
+        font-size: 3rem;
+      }
+    }
 
     .ActiveRooms {
-      border-right: 1px solid rgb(242, 242, 242);
-      box-shadow: rgba(40, 35, 45, 0.2) 0px 0px 4px 0px;
+      // border: 1px solid;
+      overflow: scroll;
+      position: relative;
+      min-height: 50vh;
+      // display: flex;
+      // justify-content: center;
+      // border-right: 1px solid rgb(242, 242, 242);
+      // box-shadow: rgba(40, 35, 45, 0.2) 0px 0px 4px 0px;
 
       // background: gray;
-      min-width: 240px;
+      // min-width: 240px;
+
+      // animation: animatedCard 1s;
+
+      .active-room {
+        animation: animatedCard 1s;
+      }
+
+      .loading-db {
+        position: absolute;
+        left: 45%;
+        top: 25%;
+      }
 
       .title {
         padding: 20px;
@@ -45,13 +137,107 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .App {
-    .main-section {
-      .ActiveRooms {
-        display: none;
-        background-color: red;
+    .main-image {
+      background-position: 40% 40%;
+
+      .main-text {
+        font-size: 3.5rem;
       }
     }
   }
 }
+
+@keyframes animatedBg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidingText {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  25% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slidingBtn {
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes animatedText {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  // 50% {
+  //   transform: translateY(10%);
+  //   opacity: 0.5;
+  // }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes animatedCard {
+  0% {
+    // transform: translate(0);
+    transform: translateX(-100%);
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+
+  // 50% {
+  //   width: 100px;
+  //   height: 125px;
+  //   opacity: 0.5;
+  // }
+
+  100% {
+    width: 200px;
+    height: 250px;
+    opacity: 1;
+    transform: translateY(0%);
+    // transform: translate(1);
+  }
+}
+
+// @media (max-width: 700px) {
+//   .App {
+//     .main-section {
+//       .ActiveRooms {
+//         display: none;
+//         background-color: red;
+//       }
+//     }
+//   }
+// }

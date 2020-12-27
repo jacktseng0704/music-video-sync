@@ -35,7 +35,6 @@ function SearchBar({ query, setQuery, searchYoutube }) {
     setValue('');
     const results = await searchYoutube(queryString);
     setSuggestions(null);
-
     console.log(results);
   };
 
@@ -48,9 +47,9 @@ function SearchBar({ query, setQuery, searchYoutube }) {
       <form
         className='search-bar'
         onSubmit={handleSubmit}
-        onFocus={(e) => {
-          console.log((e.currentTarget.style.width = '50%'));
-        }}>
+        // onFocus={(e) => {
+        //   console.log((e.currentTarget.style.width = '50%'));
+      >
         <div className='input-container'>
           {/* <IoSearchCircleSharp className='search-icon' size={30} /> */}
           <AiOutlineSearch className='search-icon' size={30} />

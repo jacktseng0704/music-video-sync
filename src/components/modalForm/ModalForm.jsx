@@ -41,9 +41,9 @@ function ModalForm({ setShowModal, video, setUserData }) {
       console.log('new room created!');
       await createRoom(localStorageData);
     }
-    setUserData(localStorageData);
+    // setUserData(localStorageData);
     console.log('user id:', localStorageData.userId);
-    console.log('video', video);
+    // console.log('video', video);
     console.log('\n');
     setName('');
   };
@@ -78,9 +78,9 @@ function ModalForm({ setShowModal, video, setUserData }) {
   };
 
   const createRoom = async ({ userId, userName }) => {
-    const { snippet, id } = video;
-    console.log('snippet', snippet);
-    console.log('create room for video id: ', id.videoId);
+    // const { snippet, id } = video;
+    // console.log('snippet', snippet);
+    // console.log('create room for video id: ', id.videoId);
 
     // const docRef = await db.collection('partyroom').add({
     //   userName: name,
@@ -92,9 +92,9 @@ function ModalForm({ setShowModal, video, setUserData }) {
     await db.collection('partyroom').doc(roomId).set({
       userName,
       userId,
-      title: snippet.title,
-      image: snippet.thumbnails.medium.url,
-      videoId: id.videoId,
+      // title: snippet.title,
+      // image: snippet.thumbnails.medium.url,
+      // videoId: id.videoId,
       roomId: roomId,
     });
 

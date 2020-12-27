@@ -37,7 +37,10 @@ function UserRoom({ setShowUserRoom }) {
         <div className='user-room'>
           <h2>Your rooms</h2>
           <div className='room-card'>
-            {userRoom && userRoom.map((room, i) => <UserRoomCard key={i} room={room} />)}
+            {userRoom &&
+              userRoom.map((room, i) => (
+                <UserRoomCard key={i} room={room} setShowUserRoom={setShowUserRoom} />
+              ))}
           </div>
         </div>
       </div>
