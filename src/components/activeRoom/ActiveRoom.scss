@@ -1,20 +1,16 @@
-.ActiveRooms {
-  // position: relative;
-  // border-bottom: 1px solid;
+.ActiveRoom {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  // flex-wrap: wrap;
-  // padding: 30px;
   text-align: center;
-  // min-height: 100vh;
   max-width: 1000px;
-  // border: 1px solid;
   margin: 50px auto;
   padding: 20px;
 
-  .title {
-    font-size: 1.3rem;
+  .loading-db {
+    position: absolute;
+    left: 45%;
+    top: 50%;
   }
 
   .active-room {
@@ -29,10 +25,11 @@
     padding: 10px;
 
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
-    overflow: scroll;
 
     cursor: pointer;
     transition: transform 0.5s;
+
+    animation: animatedCard 1s;
 
     &:hover {
       transform: translateY(-10%);
@@ -107,6 +104,22 @@
   to {
     transform: translate(50%, -50%);
     opacity: 1;
+  }
+}
+
+@keyframes animatedCard {
+  0% {
+    transform: translateX(-100%);
+    // width: 0px;
+    // height: 0px;
+    opacity: 0;
+  }
+
+  100% {
+    // width: 200px;
+    // height: 250px;
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 

@@ -14,7 +14,7 @@
   // box-shadow: 5px 5px 20px 2px #6f6e6e;
   // border-bottom: 1px solid rgb(242, 242, 242);
   box-shadow: rgba(40, 35, 45, 0.1) 0px 1px 8px 0px;
-  justify-content: space-between;
+  // justify-content: space-between;
   animation: animatedNavBar 1s;
 
   .user-name {
@@ -56,6 +56,8 @@
   }
 
   .share-link {
+    margin-left: auto;
+
     position: relative;
     display: flex;
 

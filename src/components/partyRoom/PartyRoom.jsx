@@ -20,8 +20,8 @@ function Room() {
   const { roomId } = useParams();
   const ref = db.collection('partyroom').doc(roomId);
   const activeUserRef = ref.collection('activeUser');
-  let youtubeURL = 'https://www.youtube.com/watch?v=';
-  let videoURL = `${youtubeURL}${videoId}`;
+  const youtubeURL = 'https://www.youtube.com/watch?v=';
+  const videoURL = `${youtubeURL}${videoId}`;
   const { userId, userName } = getUserData();
 
   // console.log('roomId', roomId);

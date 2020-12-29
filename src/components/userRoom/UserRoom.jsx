@@ -10,8 +10,8 @@ function UserRoom({ setShowUserRoom }) {
   // const { userId } = useParams();
 
   useEffect(() => {
-    let { userId } = getUserData();
-    let data = [];
+    const { userId } = getUserData();
+    const data = [];
     db.collection('partyroom')
       .where('userId', '==', userId)
       .get()

@@ -9,20 +9,17 @@ const firebaseConfig = {
   messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
   appId: process.env.REACT_APP_APP_ID,
 };
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 export default firebase;
 export const db = firebase.firestore();
 export const roomRef = db.collection('partyroom');
 
-// export const getActiveRoom = () => {
-//   const roomRef = db.collection('partyroom');
+export const queryActiveRooms = (callback) => {
+  const unsubscribe = roomRef.where('activeUser', '!=', []).onSnapshot((querySnapshot) => {
+    const data = querySnapshot.docs.map((doc) => doc.data());
 
-//   roomRef.where("activeUser", "!=", []).onSnapshot((querySnapshot) => {
-//     const data = querySnapshot.docs.map((doc) => doc.data());
-//     console.log('Current data: ', data);
-//   });
-
-//   console.log('=========> get active room');
-// }
+    callback(data);
+  });
+  return unsubscribe;
+};

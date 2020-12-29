@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './GetUserNameForm.scss';
 import { nanoid } from 'nanoid';
 
 function GetUserNameForm({ setUserData }) {
   const [userName, setUserName] = useState('');
-  const [userId, setUserId] = useState(nanoid(10));
+  const [userId] = useState(nanoid(10));
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const handleChange = (e) => {
     setUserName(e.target.value);
@@ -12,15 +17,14 @@ function GetUserNameForm({ setUserData }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Clicked on form!', userName);
     updateLocalStorage(userName);
     setUserData({ userName, userId });
   };
 
   const updateLocalStorage = (userName) => {
     const data = {
-      userId,
       userName,
+      userId,
     };
     localStorage.setItem('partyroom', JSON.stringify(data));
   };
@@ -33,6 +37,7 @@ function GetUserNameForm({ setUserData }) {
           <input
             value={userName}
             onChange={handleChange}
+            ref={inputRef}
             className='input-field'
             placeholder='Type your name'
           />
