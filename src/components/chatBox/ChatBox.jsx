@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ChatBox.scss';
-import { db } from '../../firebase';
+import { db } from '../../util/firebase';
 import ChatMessage from '../chatMessage/ChatMessage';
 import InputBox from '../inputBox/InputBox';
 

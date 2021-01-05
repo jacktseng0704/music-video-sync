@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './InputBox.scss';
 import sendIcon from '../../images/send.svg';
-import firebase, { db } from '../../firebase';
+import firebase, { db } from '../../util/firebase';
 import { getUserData } from '../../util/localStorage';
 
 function InputBox({ roomId }) {

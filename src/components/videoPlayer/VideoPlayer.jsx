@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactPlayer from 'react-player/lazy';
 import './VideoPlayer.scss';
-import firebase from '../../firebase';
+import firebase from '../../util/firebase';
 
 function VideoPlayer({ videoURL, roomId }) {
   const [playing, setPlaying] = useState(false);

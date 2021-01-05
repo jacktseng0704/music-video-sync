@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './ModalForm.scss';
 import { nanoid } from 'nanoid';
 import { useHistory } from 'react-router-dom';
-import { db } from '../../firebase';
+import { db } from '../../util/firebase';
 import useOutsideClick from '../../util/modal';
 import OldUserForm from '../oldUserForm/OldUserForm';
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import './ActiveRoom.scss';
 import { useHistory } from 'react-router-dom';
+import './ActiveRoom.scss';
 import Loader from 'react-loader-spinner';
 
 function ActiveRoom({ activeRoom, loadDB }) {
-  // console.log('----->room:', room);
+  // console.log('----->room:', activeRoom);
   return (
     <>
       <div className='ActiveRoom'>
@@ -19,8 +19,8 @@ function ActiveRoom({ activeRoom, loadDB }) {
           />
         ) : (
           activeRoom &&
-          activeRoom.length !== 0 &&
-          activeRoom.map((room, i) => <RoomCard key={i} room={room} />)
+          activeRoom.length &&
+          activeRoom.map((room, i) => <RoomCard key={i} room={room} style={`--index: ${i}`} />)
         )}
       </div>
     </>

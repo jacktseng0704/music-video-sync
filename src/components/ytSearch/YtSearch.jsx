@@ -4,7 +4,7 @@ import SearchBar from '../searchBar/SearchBar';
 import Loader from 'react-loader-spinner';
 import { fetchYTVideos } from '../../api/youtube';
 import { useParams } from 'react-router-dom';
-import firebase, { db } from '../../firebase';
+import firebase, { db } from '../../util/firebase';
 
 function YtSearch({ setVideoId }) {
   const [query, setQuery] = useState('2020 top hits');

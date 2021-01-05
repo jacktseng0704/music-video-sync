@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './YtPlaylist.scss';
-import { db } from '../../firebase';
+import { db } from '../../util/firebase';
 import { MdDelete } from 'react-icons/md';
 
 function YtPlaylist({ roomId }) {

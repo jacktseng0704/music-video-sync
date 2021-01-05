@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { Route, useHistory } from 'react-router-dom';
 
 import './App.scss';
 import AppHeader from '../appHeader/AppHeader';
@@ -8,9 +9,8 @@ import PartyRoom from '../partyRoom/PartyRoom';
 import UserRoom from '../userRoom/UserRoom';
 import ActiveRoom from '../activeRoom/ActiveRoom';
 import GetUserNameForm from '../getUserNameForm/GetUserNameForm';
-import { Route, useHistory } from 'react-router-dom';
 
-import { queryActiveRooms } from '../../firebase';
+import { queryActiveRooms } from '../../util/firebase';
 import { getUserData } from '../../util/localStorage';
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
       setActiveRoom(data);
       window.setTimeout(() => {
         setLoadDB(false);
-      }, 1200);
+      }, 1000);
     };
     const unsubscribe = queryActiveRooms(updateState);
     return unsubscribe;

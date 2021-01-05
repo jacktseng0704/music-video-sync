@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './PartyRoom.scss';
-import firebase, { db } from '../../firebase';
+import firebase, { db } from '../../util/firebase';
 import { getUserData } from '../../util/localStorage';
 import ChatBox from '../chatBox/ChatBox';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
 import YtSearch from '../ytSearch/YtSearch';
 import YtPlaylist from '../ytPlaylist/YtPlaylist';
-import { HiShare } from 'react-icons/hi';
 
 function Room() {
   const [videoId, setVideoId] = useState('');
-  const [showNotification, setShowNotification] = useState(false);
   const [activeUser, setActiveUser] = useState();
   const [showMessage, setShowMessage] = useState(true);
   const [showPlaylist, setShowPlaylist] = useState(false);
@@ -38,7 +36,6 @@ function Room() {
     });
 
     // activeUserRef.onSnapshot();
-
     ref.update({
       activeUser: firebase.firestore.FieldValue.arrayUnion(userId),
     });
@@ -77,36 +74,9 @@ function Room() {
   };
   // console.log('active users:', activeUser);
 
-  // const copyURL = () => {
-  //   const URL = window.location.href;
-  //   textToClipboard(URL);
-  //   setShowNotification(true);
-  //   setTimeout(() => {
-  //     setShowNotification(false);
-  //   }, 3000);
-  // };
-
-  // const textToClipboard = (text) => {
-  //   let dummy = document.createElement('textarea');
-  //   document.body.appendChild(dummy);
-  //   dummy.value = text;
-  //   dummy.select();
-  //   document.execCommand('copy');
-  //   document.body.removeChild(dummy);
-  // };
-
   return (
     <>
-      {/* <div className='info-box'>
-        <h2>Welcome to the room!</h2>
-        <div className='info-card info-card1'>Bruno Mars</div>
-      </div> */}
       <main className='PartyRoom'>
-        {/* <div className='share-link'>
-          <p>Click the icon to invite your friends</p>
-          <HiShare className='share-icon' size={20} onClick={copyURL} />
-          {showNotification && <div className='notification'>Link Copied!</div>}
-        </div> */}
         <div className='toggle-items'>
           <div
             className={`chat-box item ${showMessage && 'selected'}`}

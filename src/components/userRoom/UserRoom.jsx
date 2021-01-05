@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import { useParams } from 'react-router-dom';
 import './UserRoom.scss';
-import { db } from '../../firebase';
+import { db } from '../../util/firebase';
 import { getUserData } from '../../util/localStorage';
 import UserRoomCard from '../userRoomCard/UserRoomCard';
 
