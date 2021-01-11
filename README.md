@@ -1,9 +1,9 @@
 # Music Video Sync
 
 A platform allowing users to watch videos and listen to music with others anomously in synchronization.
-Users can join rooms to interact with others by chatting, or create their own rooms and invite others to join in by sending the link.
+Users can join rooms to interact with others by chatting, or create their own rooms and invite others to join in by sending them the link.
 
-![](https://i.imgur.com/mZbxjuZ.png)
+![](https://i.imgur.com/dCBJX0D.png)
 
 ## Technologies
 
@@ -17,33 +17,19 @@ Users can join rooms to interact with others by chatting, or create their own ro
 - Firebase
   - Database
   - Hosting
-- Other
-  - Version Control : Git / GitHub
-
-## Core Components Strcture ( 2020.08 )
-
-![](https://i.imgur.com/Fe5zDlL.png)
 
 ## Website Demo
 
-### Play Songs by Music Player
+### Synchronization in different devices
 
-![](https://i.imgur.com/gIPZQD9.gif)
-
-### Add albums to favorite
-
-![](https://i.imgur.com/sWdhhjV.gif)
-
-### Designed different layouts for better mobile experience
-
-![](https://i.imgur.com/Gv5wqt4.gif)
+![](https://media.giphy.com/media/7z78EO5EBZ8oDRnrq6/giphy.gif)
 
 ## Plan for Next Version
 
 - Allow user to add song to favorite
-- Optimize admin page layout
-- Refactor website with Redux
+- Optimize synchronization feature
+- Add user registration feature
 
 ## Contact
 
-E-mail: a26620236@gmail.com
+E-mail: b99901190@gmail.com
