@@ -45,7 +45,9 @@ function App() {
       <Route exact path='/'>
         <div className='main-image'>
           <div className='content'>
-            <h2 className='main-text'>Meet friends while listening music and watching videos!</h2>
+            <h2 className='main-text'>
+              Meet friends while listening to music and watching videos!
+            </h2>
             <button className='explore-btn' onClick={handleClick}>
               Explore
             </button>

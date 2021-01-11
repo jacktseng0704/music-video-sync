@@ -45,24 +45,27 @@ function AppHeader({ setShowUserRoom }) {
     <>
       {showModal && <ModalForm setShowModal={setShowModal} />}
       <header className='AppHeader'>
-        <Link to='/' className='link'>
+        <Link to='/rooms' className='link'>
           <h1 className='header-title'>Music Video Sync</h1>
         </Link>
-        {userData && <span className='user-name'>{`Hi~ ${userData.userName}`}</span>}
 
-        <div className='share-link'>
-          <HiShare className='share-icon' size={30} onClick={copyURL} />
-        </div>
+        <div className='header-menu'>
+          {userData && <span className='user-name'>{`Hi~ ${userData.userName}`}</span>}
 
-        <div className='add-icon'>
-          <IoMdAdd size={45} onClick={createRoom} />
-        </div>
-        {userData && (
-          <div className='user-room' onClick={handleClick}>
-            {/* User's room */}
-            <RiFolderMusicFill size={40} />
+          <div className='share-link'>
+            <HiShare className='share-icon' size={30} onClick={copyURL} />
           </div>
-        )}
+
+          <div className='add-icon'>
+            <IoMdAdd size={45} onClick={createRoom} />
+          </div>
+          {userData && (
+            <div className='user-room' onClick={handleClick}>
+              {/* User's room */}
+              <RiFolderMusicFill size={40} />
+            </div>
+          )}
+        </div>
       </header>
       {showNotification && <div className='notification'>Link Copied!</div>}
     </>

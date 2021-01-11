@@ -1,9 +1,13 @@
-# Music Video Sync
+# WOWMUSIC
 
-A platform allowing users to watch videos and listen to music with others anomously in synchronization.
-Users can join rooms to interact with others by chatting, or create their own rooms and invite others to join in by sending the link.
+A digital music service accessing to millions of songs. With WOWMUSIC , it’s easy to find the right music for every moment – on your phone, your computer, and more.
 
 ![](https://i.imgur.com/mZbxjuZ.png)
+
+## Demo
+
+https://wowmusic.zonghan-wu.com  
+User: test@gmail.com Password: 123456
 
 ## Technologies
 
@@ -14,10 +18,15 @@ Users can join rooms to interact with others by chatting, or create their own ro
 - Front-End Frameworks
   - React
   - React Router
+  - Redux
 - Firebase
   - Database
+  - Storage
   - Hosting
+  - Authentication
 - Other
+  - Module Bundler : Webpack
+  - Compiler : Babel
   - Version Control : Git / GitHub
 
 ## Core Components Strcture ( 2020.08 )
