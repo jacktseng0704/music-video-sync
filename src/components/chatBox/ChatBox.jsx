@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './ChatBox.scss';
 import { db } from '../../util/firebase';
 import ChatMessage from '../chatMessage/ChatMessage';

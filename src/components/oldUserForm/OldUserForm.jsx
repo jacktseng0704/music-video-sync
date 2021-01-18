@@ -1,4 +1,3 @@
-import React from 'react';
 import './OldUserForm.scss';
 
 function NewUserForm({ localRepo, setButton }) {

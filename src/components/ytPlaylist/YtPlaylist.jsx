@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './YtPlaylist.scss';
 import { db } from '../../util/firebase';
 import { MdDelete } from 'react-icons/md';

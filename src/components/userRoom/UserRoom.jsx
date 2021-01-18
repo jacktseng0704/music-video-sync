@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
 import './UserRoom.scss';
 import { db } from '../../util/firebase';
 import { getUserData } from '../../util/localStorage';
@@ -7,7 +5,6 @@ import UserRoomCard from '../userRoomCard/UserRoomCard';
 
 function UserRoom({ setShowUserRoom }) {
   const [userRoom, setUserRoom] = useState();
-  // const { userId } = useParams();
 
   useEffect(() => {
     const { userId } = getUserData();
@@ -33,7 +30,6 @@ function UserRoom({ setShowUserRoom }) {
           setShowUserRoom((prevState) => !prevState);
         }}></div>
       <div className='UserRoom'>
-        {/* <h2>User id : {userId}</h2> */}
         <div className='user-room'>
           <h2>Your rooms</h2>
           <div className='room-card'>

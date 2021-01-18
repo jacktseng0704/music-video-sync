@@ -1,4 +1,3 @@
-import React from 'react';
 import './VideoList.scss';
 import VideoCard from '../videoCard/VideoCard';
 

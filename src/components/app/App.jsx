@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { Route, useHistory, Redirect } from 'react-router-dom';
 

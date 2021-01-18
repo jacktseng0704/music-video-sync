@@ -9,6 +9,8 @@
   "parser": "babel-eslint",
   "rules": {
     "semi": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "prefer-const": [
       "error",
       {

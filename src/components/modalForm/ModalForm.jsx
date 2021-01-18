@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './ModalForm.scss';
 import { nanoid } from 'nanoid';
 import { useHistory } from 'react-router-dom';

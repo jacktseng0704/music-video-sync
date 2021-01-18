@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './AppHeader.scss';
 import { Link } from 'react-router-dom';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './ActiveRoom.scss';
 import Loader from 'react-loader-spinner';

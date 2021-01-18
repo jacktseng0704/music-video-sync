@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './YtSearch.scss';
 import SearchBar from '../searchBar/SearchBar';
 import Loader from 'react-loader-spinner';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './InputBox.scss';
 import sendIcon from '../../images/send.svg';
 import firebase, { db } from '../../util/firebase';
