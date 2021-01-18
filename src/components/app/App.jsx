@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Route, useHistory } from 'react-router-dom';
+import { Route, useHistory, Redirect } from 'react-router-dom';
 
 import './App.scss';
 import AppHeader from '../appHeader/AppHeader';
@@ -67,6 +67,10 @@ function App() {
       <Route path='/partyroom/:roomId'>
         <AppHeader setShowUserRoom={setShowUserRoom} />
         {userData ? <PartyRoom /> : <GetUserNameForm setUserData={setUserData} />}
+      </Route>
+
+      <Route path='*'>
+        <Redirect to='/' />
       </Route>
     </div>
   );

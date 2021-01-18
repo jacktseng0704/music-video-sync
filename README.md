@@ -1,6 +1,6 @@
 # Music Video Sync
 
-A platform allowing users to watch videos and listen to music with others anomously in synchronization.
+A platform allowing users to watch videos and listen to music with others anonymously in synchronization.
 Users can join rooms to interact with others by chatting, or create their own rooms and invite others to join in by sending them the link.
 
 ![](https://i.imgur.com/dCBJX0D.png)
@@ -19,6 +19,10 @@ Users can join rooms to interact with others by chatting, or create their own ro
   - Hosting
 
 ## Website Demo
+
+### Overview
+
+![](https://i.imgur.com/aU1BNUK.gif)
 
 ### Synchronization in different devices
 
