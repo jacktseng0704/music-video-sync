@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Route, useHistory, Redirect } from 'react-router-dom';
+import { Route, useHistory, Redirect, Switch } from 'react-router-dom';
 
 import './App.scss';
 import AppHeader from '../appHeader/AppHeader';
@@ -41,36 +41,38 @@ function App() {
 
   return (
     <div className='App'>
-      <Route exact path='/'>
-        <div className='main-image'>
-          <div className='content'>
-            <h2 className='main-text'>
-              Meet friends while listening to music and watching videos!
-            </h2>
-            <button className='explore-btn' onClick={handleClick}>
-              Explore
-            </button>
+      <Switch>
+        <Route path='/partyroom/:roomId'>
+          <AppHeader setShowUserRoom={setShowUserRoom} />
+          {userData ? <PartyRoom /> : <GetUserNameForm setUserData={setUserData} />}
+        </Route>
+
+        <Route exact path='/rooms'>
+          <AppHeader setShowUserRoom={setShowUserRoom} />
+          <main className='main-section'>
+            <PageHeader />
+            <ActiveRoom loadDB={loadDB} activeRoom={activeRoom} />
+          </main>
+        </Route>
+        {showUserRoom && <UserRoom setShowUserRoom={setShowUserRoom} />}
+
+        <Route exact path='/'>
+          <div className='main-image'>
+            <div className='content'>
+              <h2 className='main-text'>
+                Meet friends while listening to music and watching videos!
+              </h2>
+              <button className='explore-btn' onClick={handleClick}>
+                Explore
+              </button>
+            </div>
           </div>
-        </div>
-      </Route>
+        </Route>
 
-      <Route exact path='/rooms'>
-        <AppHeader setShowUserRoom={setShowUserRoom} />
-        <main className='main-section'>
-          <PageHeader />
-          <ActiveRoom loadDB={loadDB} activeRoom={activeRoom} />
-        </main>
-      </Route>
-      {showUserRoom && <UserRoom setShowUserRoom={setShowUserRoom} />}
-
-      <Route path='/partyroom/:roomId'>
-        <AppHeader setShowUserRoom={setShowUserRoom} />
-        {userData ? <PartyRoom /> : <GetUserNameForm setUserData={setUserData} />}
-      </Route>
-
-      <Route path='*'>
-        <Redirect to='/' />
-      </Route>
+        <Route path='*'>
+          <Redirect to='/' />
+        </Route>
+      </Switch>
     </div>
   );
 }
