@@ -25,7 +25,7 @@ function ModalForm({ setShowModal, video, setUserData }) {
     }
     inputRef.current.focus();
   }, []);
-  console.log('========localRepo', localRepo);
+  // console.log('========localRepo', localRepo);
 
   useOutsideClick(ref, () => {
     setShowModal(false);
@@ -36,14 +36,12 @@ function ModalForm({ setShowModal, video, setUserData }) {
     const localStorageData = await checkLocalStorage();
     if (button === 2) {
       history.push(`/user/${localStorageData.userId}`);
-      console.log('use old room!');
+      // console.log('use old room!');
     } else {
-      console.log('new room created!');
+      // console.log('new room created!');
       await createRoom(localStorageData);
     }
-    // setUserData(localStorageData);
     console.log('user id:', localStorageData.userId);
-    // console.log('video', video);
     console.log('\n');
     setName('');
   };
@@ -60,47 +58,28 @@ function ModalForm({ setShowModal, video, setUserData }) {
     };
 
     const createRepo = () => {
-      // storage = { roomId: [] };
       storage = {};
 
       storage['userName'] = name;
       storage['userId'] = userId;
-      // storage['roomId'].push(roomId);
       window.localStorage.setItem('partyroom', JSON.stringify(storage));
     };
     localRepo ? readRepo() : createRepo();
 
-    console.log('---->userId', storage['userId']);
-    // console.log('---->roomId', storage['roomId']);
-    console.log('---->userName', storage['userName']);
+    // console.log('---->userId', storage['userId']);
+    // console.log('---->userName', storage['userName']);
 
     return storage;
   };
 
   const createRoom = async ({ userId, userName }) => {
-    // const { snippet, id } = video;
-    // console.log('snippet', snippet);
-    // console.log('create room for video id: ', id.videoId);
-
-    // const docRef = await db.collection('partyroom').add({
-    //   userName: name,
-    //   userId: userId,
-    //   title: snippet.title,
-    //   videoId: id.videoId,
-    // });
-
     await db.collection('partyroom').doc(roomId).set({
       userName,
       userId,
-      // title: snippet.title,
-      // image: snippet.thumbnails.medium.url,
-      // videoId: id.videoId,
       roomId: roomId,
     });
 
-    // history.push(`/partyroom/${localStorageData.roomId}`);
     history.push(`/partyroom/${roomId}`);
-    // console.log('Room id: ', docRef.id);
   };
 
   return (

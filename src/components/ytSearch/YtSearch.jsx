@@ -83,13 +83,6 @@ function VideoCard({ video }) {
     console.log('roomId', roomId);
 
     addSongToFirebase();
-
-    // ref.update({
-    //   videoId: id.videoId,
-    //   image: snippet.thumbnails.medium.url,
-    //   title: snippet.title,
-    // });
-    // setVideoId(id.videoId);
   };
 
   return (

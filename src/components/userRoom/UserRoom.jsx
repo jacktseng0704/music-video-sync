@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './UserRoom.scss';
 import { db } from '../../util/firebase';
 import { getUserData } from '../../util/localStorage';
@@ -19,8 +20,6 @@ function UserRoom({ setShowUserRoom }) {
         setUserRoom(data);
       });
   }, []);
-
-  console.log(userRoom);
 
   return (
     <>

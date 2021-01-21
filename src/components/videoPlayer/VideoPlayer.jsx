@@ -18,9 +18,7 @@ function VideoPlayer({ videoURL, roomId }) {
 
   const monitorFirestore = async () => {
     await docRef.onSnapshot((doc) => {
-      // console.log('playing', playing);
       const playingStatus = doc?.data()?.playing;
-      // console.log('playingStatus', playingStatus);
 
       if (typeof videoRef?.current?.getInternalPlayer()?.pauseVideo !== 'function') {
         return;
@@ -34,55 +32,21 @@ function VideoPlayer({ videoURL, roomId }) {
         setPlaying(false);
         videoRef.current.getInternalPlayer().pauseVideo();
       }
-
-      // console.log('\n');
     });
   };
 
   const handleOnProgress = (state) => {
-    // console.log('onProgress callback');
-    // console.log(videoRef.current.getCurrentTime());
     setPlayingTime((prevState) => {
-      // console.log('Difference', Math.abs(state.playedSeconds - prevState));
       if (Math.abs(state.playedSeconds - prevState) > 2) {
-        // console.log('playing', playing);
         updateFirestore(state.playedSeconds);
-        // if (playing) {
-        //   videoRef.current.getInternalPlayer().playVideo();
-        //   docRef.update({
-        //     paused: false,
-        //   });
-        // }
-        // docRef.update({
-        //   // playingTime: videoRef.current.getCurrentTime(),
-        //   playingTime: state.playedSeconds,
-        // });
       }
-      // console.log('prevState', prevState);
-      // console.log('newState', state.playedSeconds);
-      // console.log('\n');
       return state.playedSeconds;
     });
   };
 
   useEffect(() => {
     monitorFirestore();
-
-    // const updatePlayingTime = () => {
-    //   docRef.update({
-    //     playingTime,
-    //   });
-    // };
-
-    // window.addEventListener('beforeunload', updatePlayingTime);
-
-    // return () => {
-    //   updatePlayingTime();
-    //   window.removeEventListener('beforeunload', updatePlayingTime);
-    // };
   }, []);
-
-  // console.log('playing time', playingTime);
 
   return (
     <>
@@ -96,49 +60,37 @@ function VideoPlayer({ videoURL, roomId }) {
           width='100%'
           height='100%'
           onReady={() => {
-            console.log('onReady callback');
-            console.log('someone joined the room!');
-            console.log('\n');
+            // console.log('onReady callback');
+            // console.log('someone joined the room!');
+            // console.log('\n');
             docRef.update({
               playing: false,
               playingTime: 0,
             });
           }}
           onStart={() => {
-            console.log('onStart callback');
-            console.log('\n');
+            // console.log('onStart callback');
+            // console.log('\n');
             docRef.update({
               playing: true,
               playingTime: 0,
             });
           }}
           onPlay={() => {
-            // setPlaying(true);
-
-            // setPlaying((prevState) => {
-            //   console.log('prevState', prevState);
-            // docRef.update({
-            //   playing: true,
-            // });
-
-            //   return true;
-            // });
-            // console.log('newState', true);
-
-            console.log('onPlay callback');
-            console.log('\n');
+            // console.log('onPlay callback');
+            // console.log('\n');
           }}
           onPause={() => {
             setPlaying(false);
 
-            console.log('playing', playing);
+            // console.log('playing', playing);
 
             docRef.update({
               playing: false,
               playingTime: videoRef.current.getCurrentTime(),
             });
-            console.log('onPause callback');
-            console.log('\n');
+            // console.log('onPause callback');
+            // console.log('\n');
           }}
           // onEnded={() => {
           //   console.log('onEnded callback');

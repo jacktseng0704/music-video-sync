@@ -30,7 +30,6 @@ function ChatBox({ roomId, activeUser, showMessage }) {
   const renderMessages = () => {
     const unsubscribe = messagesRef.orderBy('timeSent').onSnapshot((snap) => {
       const data = snap.docs.map((doc) => doc.data());
-      // console.log('Current data: ', data);
       setMessages(data);
     });
     return () => unsubscribe();
@@ -48,8 +47,6 @@ function ChatBox({ roomId, activeUser, showMessage }) {
       </div>
       {showMessage && (
         <>
-          {/* <h3>Chat Messages</h3> */}
-          {/* <p className='room-id'>roomId: {roomId}</p> */}
           <div className='messages' ref={messageEl}>
             {messages &&
               messages.map((message, index) => <ChatMessage message={message} key={index} />)}

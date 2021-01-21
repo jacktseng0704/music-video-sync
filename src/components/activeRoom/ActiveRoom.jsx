@@ -3,7 +3,6 @@ import './ActiveRoom.scss';
 import Loader from 'react-loader-spinner';
 
 function ActiveRoom({ activeRoom, loadDB }) {
-  // console.log('----->room:', activeRoom);
   return (
     <>
       <div className='ActiveRoom'>

@@ -26,7 +26,6 @@ function YtPlaylist({ roomId }) {
 
   return (
     <div className='YtPlaylist YtSearch'>
-      {/* <h3>Playlist</h3> */}
       <div className='VideoList'>
         {playList &&
           playList.map((video, index) => <VideoCard video={video} key={index} roomRef={roomRef} />)}

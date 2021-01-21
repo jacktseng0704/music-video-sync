@@ -5,10 +5,6 @@ function NewUserForm({ localRepo, setButton }) {
     setButton(1);
   };
 
-  // const useOldRoom = () => {
-  //   setButton(2);
-  // };
-
   return (
     <>
       {' '}
@@ -16,9 +12,6 @@ function NewUserForm({ localRepo, setButton }) {
       <button type='submit' onClick={createNewRoom} name='create'>
         Create a new room
       </button>
-      {/* <button type='submit' onClick={useOldRoom} name='useprevious'>
-        Use previous room
-      </button> */}
     </>
   );
 }

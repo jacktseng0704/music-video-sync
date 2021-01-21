@@ -1,8 +1,6 @@
 import './VideoCard.scss';
-// import ModalForm from '../modalForm/ModalForm';
 
 function VideoCard({ video, setUserData }) {
-  // const [showModal, setShowModal] = useState(false);
   const { snippet, id } = video;
 
   const handleClick = () => {
@@ -11,9 +9,6 @@ function VideoCard({ video, setUserData }) {
 
   return (
     <>
-      {/* {showModal && (
-        <ModalForm setShowModal={setShowModal} video={video} setUserData={setUserData} />
-      )} */}
       <div className='VideoCard' onClick={handleClick} id={id.videoId}>
         <img src={snippet.thumbnails.medium.url} alt={snippet.description} />
         <p className='card-title'>{snippet.title}</p>

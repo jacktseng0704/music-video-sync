@@ -2,8 +2,6 @@ import './VideoList.scss';
 import VideoCard from '../videoCard/VideoCard';
 
 function VideoList({ videoList, setUserData }) {
-  // console.log('Video List: ', videoList);
-
   return (
     <>
       <main className='MainSection'>

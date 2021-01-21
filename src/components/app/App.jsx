@@ -37,10 +37,10 @@ function App() {
     return unsubscribe;
   }, []);
 
-  // console.log('====>activeRoom', activeRoom);
-
   return (
     <div className='App'>
+      {showUserRoom && <UserRoom setShowUserRoom={setShowUserRoom} />}
+
       <Switch>
         <Route path='/partyroom/:roomId'>
           <AppHeader setShowUserRoom={setShowUserRoom} />
@@ -54,7 +54,6 @@ function App() {
             <ActiveRoom loadDB={loadDB} activeRoom={activeRoom} />
           </main>
         </Route>
-        {showUserRoom && <UserRoom setShowUserRoom={setShowUserRoom} />}
 
         <Route exact path='/'>
           <div className='main-image'>

@@ -22,20 +22,15 @@ function Room() {
   const videoURL = `${youtubeURL}${videoId}`;
   const { userId, userName } = getUserData();
 
-  // console.log('roomId', roomId);
-
   useEffect(() => {
     ref.get().then((doc) => {
-      // console.log(doc.data());
       setVideoId(doc.data().videoId);
-      // setActiveUser(doc.data().activeUser);
     });
 
     ref.onSnapshot((doc) => {
       setVideoId(doc.data().videoId);
     });
 
-    // activeUserRef.onSnapshot();
     ref.update({
       activeUser: firebase.firestore.FieldValue.arrayUnion(userId),
     });
@@ -61,18 +56,14 @@ function Room() {
       window.removeEventListener('beforeunload', updateUserStatus);
     };
   }, []);
-  // console.log('user id:', userId);
-  // console.log('active users:', activeUser);
 
   const monitorActiveUsers = () => {
     const unsubscribe = activeUserRef.onSnapshot((snap) => {
       const data = snap.docs.map((doc) => doc.data());
-      // console.log('Current data: ', data);
       setActiveUser(data);
     });
     return () => unsubscribe();
   };
-  // console.log('active users:', activeUser);
 
   return (
     <>
@@ -107,7 +98,6 @@ function Room() {
           </div>
         </div>
 
-        {/* <h3>Party room id: {roomId}</h3> */}
         {videoId && <VideoPlayer videoURL={videoURL} roomId={roomId} />}
 
         {showSearch && <YtSearch setVideoId={setVideoId} firebase={ref} />}

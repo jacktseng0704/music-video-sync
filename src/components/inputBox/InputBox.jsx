@@ -37,7 +37,6 @@ function InputBox({ roomId }) {
         onChange={handleChange}
         value={inputMessage}
       />
-      {/* <input className='submit-btn' type='submit' disabled={!inputMessage} /> */}
       <button className='input-btn' disabled={!inputMessage}>
         <img src={sendIcon} alt='send-icon' />
       </button>

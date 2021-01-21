@@ -179,7 +179,7 @@
           margin: 12% 5%;
         }
         .explore-btn {
-          bottom: 12%;
+          bottom: 20%;
         }
       }
     }
@@ -199,7 +199,7 @@
 
         .explore-btn {
           position: absolute;
-          margin-bottom: 0%;
+          margin-bottom: 5%;
         }
       }
     }
@@ -229,14 +229,8 @@
 
 @media (max-width: 600px) {
   .App {
-    // position: relative;
-
     .main-image {
-      background-position: 25% 100%;
-
       .content {
-        position: relative;
-
         .main-text {
           width: 60%;
           height: 20%;
@@ -248,7 +242,7 @@
         .explore-btn {
           width: 150px;
           position: absolute;
-          margin-bottom: 0%;
+          margin-bottom: 5%;
         }
       }
     }
@@ -257,14 +251,8 @@
 
 @media (max-width: 500px) {
   .App {
-    // position: relative;
-
     .main-image {
-      background-position: 25% 100%;
-
       .content {
-        position: relative;
-
         .main-text {
           width: 70%;
           height: 20%;
@@ -276,7 +264,7 @@
         .explore-btn {
           width: 150px;
           position: absolute;
-          margin-bottom: 0%;
+          margin-bottom: 5%;
         }
       }
     }
@@ -285,14 +273,8 @@
 
 @media (max-width: 400px) {
   .App {
-    // position: relative;
-
     .main-image {
-      background-position: 25% 100%;
-
       .content {
-        position: relative;
-
         .main-text {
           width: 90%;
           height: 20%;
@@ -303,7 +285,7 @@
 
         .explore-btn {
           width: 150px;
-          margin-bottom: -5%;
+          margin-bottom: 10%;
         }
       }
     }

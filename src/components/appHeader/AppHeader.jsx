@@ -61,7 +61,6 @@ function AppHeader({ setShowUserRoom }) {
           </div>
           {userData && (
             <div className='user-room' onClick={handleClick}>
-              {/* User's room */}
               <RiFolderMusicFill size={40} />
             </div>
           )}
